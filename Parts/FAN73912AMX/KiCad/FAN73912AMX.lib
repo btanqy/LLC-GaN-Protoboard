@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model FAN73912AMX
+#/17570699/2102173/2.50/16/2/Integrated Circuit
+DEF FAN73912AMX IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "FAN73912AMX" 950 200 50 H V L CNN
+F2 "SOIC127P1032X264-16N" 950 100 50 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/FAN73912A-D.PDF" 950 0 50 H I L CNN
+F4 "Floating Channel for Bootstrap Operation to +1200 V; Typically 2 A/ 3 A Sourcing/Sinking Current Driving Capability for Both Channels; Gate Driver Supply (VCC) Range from 12 V to 20 V; Separate Logic Supply (VDD) Range from 3 V to 20 V; Extended Allowable Negative VS Swing to -9.8 V for Signal Propagation at VCC=VBS=15 V; Built-in Cycle-by-Cycle Edge-Triggered Shutdown Logic; Common-Mode dv/dt Noise Canceling Circuit; UVLO Functions for Both Channels; Built-in Advanced Input Filter; Matched Propagation Dela" 950 -100 50 H I L CNN "Description"
+F5 "2.64" 950 -200 50 H I L CNN "Height"
+F6 "onsemi" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "FAN73912AMX" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "863-FAN73912AMX" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/onsemi/FAN73912AMX?qs=HBWAp0VN4Rig4jonAM17%2Fg%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 950 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X LO 1 0 0 200 R 50 50 0 0 P
+X COM 2 0 -100 200 R 50 50 0 0 P
+X VCC 3 0 -200 200 R 50 50 0 0 P
+X NC_1 4 0 -300 200 R 50 50 0 0 P
+X NC_2 5 0 -400 200 R 50 50 0 0 P
+X VS 6 0 -500 200 R 50 50 0 0 P
+X VB 7 0 -600 200 R 50 50 0 0 P
+X HO 8 0 -700 200 R 50 50 0 0 P
+X NC_5 16 1100 0 200 L 50 50 0 0 P
+X VSS 15 1100 -100 200 L 50 50 0 0 P
+X LIN 14 1100 -200 200 L 50 50 0 0 P
+X SD 13 1100 -300 200 L 50 50 0 0 P
+X HIN 12 1100 -400 200 L 50 50 0 0 P
+X VDD 11 1100 -500 200 L 50 50 0 0 P
+X NC_4 10 1100 -600 200 L 50 50 0 0 P
+X NC_3 9 1100 -700 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 900 100 900 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

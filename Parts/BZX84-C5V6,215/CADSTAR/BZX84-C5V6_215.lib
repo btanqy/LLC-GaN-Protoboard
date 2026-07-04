@@ -1,0 +1,18 @@
+.BZX84-C5V6_215 :1 ;5.6V Zener diode,BZX84C5V6 300mW NXP BZX84-C5V6,215 Zener Diode, 5.6V 5% 0.25 W SMT 3-Pin TO-236AB
+SOT95P230X110-3N
+*STM IC
+*NGS
+*PLB 1="A" 2="N.C." 3="K"
+*MXP 3
+*DFN BZX84-C5V6_215
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (BZX84-C5V6,215)
+~!Mouser Part Number (771-BZX84-C5V6-T/R)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Nexperia/BZX84-C5V6215?qs=me8TqzrmIYUqZBy94aN2WQ%3D%3D)
+~!Arrow Part Number (BZX84-C5V6,215)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/bzx84-c5v6215/nexperia?utm_currency=USD&region=asia)
+~!Link Datasheet (https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf)
+~!Height (1.1mm)
+~!3D_Model (BZX84-C5V6,215)
+BZX84-C5V6_215
+1.1!U 2.1!U 3.1!U 

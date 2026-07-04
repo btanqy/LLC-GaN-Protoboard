@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "BZX84-C5V6_215"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-12-09-16:07:57)
+    (mountForm default
+        (footprintRef "SOT95P230X110-3N")
+        (spec "System")
+    )
+)

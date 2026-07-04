@@ -1,0 +1,194 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "FAN73912AMX"
+   (description "Floating Channel for Bootstrap Operation to +1200 V; Typically 2 A/ 3 A Sourcing/Sinking Current Driving Capability for Both Channels; Gate Driver Supply (VCC) Range from 12 V to 20 V; Separate Logic Supply (VDD) Range from 3 V to 20 V; Extended Allowable Negative VS Swing to -9.8 V for Signal Propagation at VCC=VBS=15 V; Built-in Cycle-by-Cycle Edge-Triggered Shutdown Logic; Common-Mode dv/dt Noise Canceling Circuit; UVLO Functions for Both Channels; Built-in Advanced Input Filter; Matched Propagation Dela")
+   (family "ANA")
+   (package "SOIC127P1032X264-16N")
+   (attribute "Datasheet Link" "https://www.onsemi.com/pub/Collateral/FAN73912A-D.PDF")
+   (attribute "Geometry.Height" "2.64mm")
+   (attribute "Manufacturer_Name" "onsemi")
+   (attribute "Manufacturer_Part_Number" "FAN73912AMX")
+   (attribute "Mouser Part Number" "863-FAN73912AMX")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/FAN73912AMX?qs=HBWAp0VN4Rig4jonAM17%2Fg%3D%3D")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "FAN73912AMX")
+    (pin "LO" 1 PS)
+    (pin "COM" 2 PS)
+    (pin "VCC" 3 PS)
+    (pin "NC_1" 4 PS)
+    (pin "NC_2" 5 PS)
+    (pin "VS" 6 PS)
+    (pin "VB" 7 PS)
+    (pin "HO" 8 PS)
+    (pin "NC_5" 16 PS)
+    (pin "VSS" 15 PS)
+    (pin "LIN" 14 PS)
+    (pin "SD" 13 PS)
+    (pin "HIN" 12 PS)
+    (pin "VDD" 11 PS)
+    (pin "NC_4" 10 PS)
+    (pin "NC_3" 9 PS)
+   )
+  )
+  (symbol "FAN73912AMX"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 900 100) (pt 900 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOIC127P1032X264-16N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.925 5.495)
+      (pt 5.925 5.495)
+      (pt 5.925 -5.495)
+      (pt -5.925 -5.495)
+      (pt -5.925 5.495))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.745 5.142)
+      (pt 3.745 5.142)
+      (pt 3.745 -5.142)
+      (pt -3.745 -5.142)
+      (pt -3.745 5.142))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.745 3.872)
+      (pt -2.475 5.142))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.395 5.142)
+      (pt 3.395 5.142)
+      (pt 3.395 -5.142)
+      (pt -3.395 -5.142)
+      (pt -3.395 5.142))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5.675 5.145)
+      (pt -3.745 5.145))))
+   (leg 1 (pt -4.71 4.445) (padstack 0))
+   (leg 2 (pt -4.71 3.175) (padstack 0))
+   (leg 3 (pt -4.71 1.905) (padstack 0))
+   (leg 4 (pt -4.71 0.635) (padstack 0))
+   (leg 5 (pt -4.71 -0.635) (padstack 0))
+   (leg 6 (pt -4.71 -1.905) (padstack 0))
+   (leg 7 (pt -4.71 -3.175) (padstack 0))
+   (leg 8 (pt -4.71 -4.445) (padstack 0))
+   (leg 9 (pt 4.71 -4.445) (padstack 0))
+   (leg 10 (pt 4.71 -3.175) (padstack 0))
+   (leg 11 (pt 4.71 -1.905) (padstack 0))
+   (leg 12 (pt 4.71 -0.635) (padstack 0))
+   (leg 13 (pt 4.71 0.635) (padstack 0))
+   (leg 14 (pt 4.71 1.905) (padstack 0))
+   (leg 15 (pt 4.71 3.175) (padstack 0))
+   (leg 16 (pt 4.71 4.445) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.93 0 0 0))
+   )
+   (model "FAN73912AMX.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

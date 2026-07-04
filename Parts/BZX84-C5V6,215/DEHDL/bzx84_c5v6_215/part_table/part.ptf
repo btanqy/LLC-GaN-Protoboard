@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BZX84_C5V6_215'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nexperia", "BZX84-C5V6,215" (!) = "", "SOT95P230X110-3N", "SOT23 (3-Pin)", "771-BZX84-C5V6-T/R", "https://www.mouser.co.uk/ProductDetail/Nexperia/BZX84-C5V6215?qs=me8TqzrmIYUqZBy94aN2WQ%3D%3D", "BZX84-C5V6,215", "https://www.arrow.com/en/products/bzx84-c5v6215/nexperia?utm_currency=USD&region=asia", "5.6V Zener diode,BZX84C5V6 300mW NXP BZX84-C5V6,215 Zener Diode, 5.6V 5% 0.25 W SMT 3-Pin TO-236AB", "https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf", "1.1 mm"
+END_PART
+
+END.

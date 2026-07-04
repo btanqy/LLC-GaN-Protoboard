@@ -1,0 +1,9 @@
+Manufacturer=onsemi
+PartNumber=FAN73912AMX
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=16
+Version=2.1
+Released=2023-06-24 12:24:37
+Downloaded=2026-07-04 16:38:15
+3D=Y

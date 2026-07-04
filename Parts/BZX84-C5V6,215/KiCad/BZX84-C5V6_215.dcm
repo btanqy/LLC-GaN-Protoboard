@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BZX84-C5V6,215
+D 5.6V Zener diode,BZX84C5V6 300mW NXP BZX84-C5V6,215 Zener Diode, 5.6V 5% 0.25 W SMT 3-Pin TO-236AB
+K
+F https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf
+$ENDCMP
+#
+#End Doc Library
