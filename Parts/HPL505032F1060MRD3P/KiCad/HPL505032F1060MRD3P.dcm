@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HPL505032F1060MRD3P
+D SMD / SMT Inductors (Coils), L=60nH, L x W x T :5X5X3.2
+K
+F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_hpl505032f1_en.pdf
+$ENDCMP
+#
+#End Doc Library

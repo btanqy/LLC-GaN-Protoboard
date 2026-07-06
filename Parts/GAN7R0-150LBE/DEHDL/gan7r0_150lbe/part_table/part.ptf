@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GAN7R0_150LBE'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nexperia", "GAN7R0-150LBE" (!) = "", "GAN7R0150LBE", "Other", "", "", "", "", "N-Channel 150 V 28A 28W Surface Mount 3-FCLGA (3.2x2.2) ", "https://assets.nexperia.com/documents/data-sheet/GAN7R0-150LBE.pdf", "0.874 mm"
+END_PART
+
+END.

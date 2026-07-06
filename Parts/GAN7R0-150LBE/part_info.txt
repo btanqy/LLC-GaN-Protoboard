@@ -1,0 +1,9 @@
+Manufacturer=Nexperia
+PartNumber=GAN7R0-150LBE
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=3
+Version=1.3
+Released=2023-06-21 09:46:30
+Downloaded=2026-07-06 15:55:47
+3D=Y

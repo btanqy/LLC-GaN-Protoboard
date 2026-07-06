@@ -1,0 +1,18 @@
+.GAN7R0-150LBE :1 ;N-Channel 150 V 28A 28W Surface Mount 3-FCLGA (3.2x2.2) 
+GAN7R0150LBE
+*STM IC
+*NGS
+*PLB 1="G" 2="S" 3="D"
+*MXP 3
+*DFN GAN7R0-150LBE
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (GAN7R0-150LBE)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://assets.nexperia.com/documents/data-sheet/GAN7R0-150LBE.pdf)
+~!Height (0.874mm)
+~!3D_Model (GAN7R0-150LBE)
+GAN7R0-150LBE
+1.1!U 2.1!U 3.1!U 

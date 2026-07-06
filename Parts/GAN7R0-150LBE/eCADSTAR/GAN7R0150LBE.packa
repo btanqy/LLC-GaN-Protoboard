@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "GAN7R0-150LBE"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-06-21-09:46:30)
+    (mountForm default
+        (footprintRef "GAN7R0150LBE")
+        (spec "System")
+    )
+)

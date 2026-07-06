@@ -10,6 +10,7 @@ Some resources that were used for reference during board design:
 - [Pinout Map](https://www.ti.com/lit/ml/spaz056/spaz056.pdf?ts=1783172662507)
 - [LaunchPad Hardware Design Guidelines](https://www.ti.com/lit/an/slaa542/slaa542.pdf)
 - [F28P55X Datasheet](https://www.ti.com/lit/ds/sprsp85d/sprsp85d.pdf?ts=1783173915619)
+- [Open Magnetics](https://openmagnetics.com)
 
 - [LLC Topology](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/Ch4.pdf)
 - [LLC Switches and Tank](https://www.monolithicpower.com/learning/resources/understanding-llc-operation-part-i-power-switches-and-resonant-tank)

@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model GAN7R0-150LBE
+#/18353419/2102173/2.50/3/3/Integrated Circuit
+DEF GAN7R0-150LBE IC 0 30 Y Y 1 F N
+F0 "IC" 650 300 50 H V L CNN
+F1 "GAN7R0-150LBE" 650 200 50 H V L CNN
+F2 "GAN7R0150LBE" 650 100 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/GAN7R0-150LBE.pdf" 650 0 50 H I L CNN
+F4 "N-Channel 150 V 28A 28W Surface Mount 3-FCLGA (3.2x2.2) " 650 -100 50 H I L CNN "Description"
+F5 "0.874" 650 -200 50 H I L CNN "Height"
+F6 "Nexperia" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "GAN7R0-150LBE" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X G 1 800 0 200 L 50 50 0 0 P
+X S 2 0 0 200 R 50 50 0 0 P
+X D 3 800 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

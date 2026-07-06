@@ -155,6 +155,36 @@
 				(justify left top)
 			)
 		)
+		(pin "HIN" input
+			(at 137.16 38.1 180)
+			(uuid "18105c2c-272b-4914-a92a-ef6b55bb5ca8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LIN" input
+			(at 137.16 41.91 180)
+			(uuid "cebd63ab-b03e-4920-8367-6b4a245098aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIN" input
+			(at 137.16 30.48 180)
+			(uuid "542dc8ed-4623-4b55-88c2-bacf3964b910")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c"

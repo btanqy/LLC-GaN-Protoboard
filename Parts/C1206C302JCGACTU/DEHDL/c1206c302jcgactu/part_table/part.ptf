@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C1206C302JCGACTU'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Yageo Group", "C1206C302JCGACTU" (!) = "", "C1206", "Other", "", "", "", "", "SMD, MLCC, Ultra-Stable, Low Loss, Class I", "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1009_C0G_HV_SMD"
+END_PART
+
+END.

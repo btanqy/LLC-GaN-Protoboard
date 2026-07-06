@@ -1,0 +1,110 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "GAN7R0-150LBE"
+   (description "N-Channel 150 V 28A 28W Surface Mount 3-FCLGA (3.2x2.2) ")
+   (family "ANA")
+   (package "GAN7R0150LBE")
+   (attribute "Datasheet Link" "https://assets.nexperia.com/documents/data-sheet/GAN7R0-150LBE.pdf")
+   (attribute "Geometry.Height" "0.874mm")
+   (attribute "Manufacturer_Name" "Nexperia")
+   (attribute "Manufacturer_Part_Number" "GAN7R0-150LBE")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "GAN7R0-150LBE")
+    (pin "G" 1 PS)
+    (pin "S" 2 PS)
+    (pin "D" 3 PS)
+   )
+  )
+  (symbol "GAN7R0-150LBE"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "GAN7R0150LBE"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.6 -1.1)
+      (pt 1.6 -1.1)
+      (pt 1.6 1.1)
+      (pt -1.6 1.1)
+      (pt -1.6 -1.1))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.6 2.1)
+      (pt 2.6 2.1)
+      (pt 2.6 -2.1)
+      (pt -2.6 -2.1)
+      (pt -2.6 2.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.2 0.545)
+      (arc (pt -2.200 0.545) (pt -2.200 0.495) (pt -2.100 0.595) (start 180.0) (sweep 180.0))
+      (pt -2.1 0.545)
+      (arc (pt -2.100 0.545) (pt -2.200 0.495) (pt -2.100 0.595) (start 180.0) (sweep .0))
+      (pt -2.2 0.545))))
+   (leg 1 (pt -1.320 0.545) (padstack 0))
+   (leg 2 (pt 0.000 -0.650) (padstack 2))
+   (leg 3 (pt 0.375 0.545) (padstack 3))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.310 0.850 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 0.640 2.950 0 0 0.000))
+   )
+   (padstack 3
+    (plated false)
+    (pad (layer TCOP) (rectf 0.850 2.200 0 0 0.000))
+   )
+   (model "GAN7R0-150LBE.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

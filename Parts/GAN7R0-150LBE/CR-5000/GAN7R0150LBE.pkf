@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "GAN7R0150LBE"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "GAN7R0150LBE")
+        (spec "default")
+    )
+)

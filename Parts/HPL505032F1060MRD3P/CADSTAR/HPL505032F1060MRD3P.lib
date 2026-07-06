@@ -1,0 +1,18 @@
+.HPL505032F1060MRD3P :1 ;SMD / SMT Inductors (Coils), L=60nH, L x W x T :5X5X3.2
+HPL505032F1060MRD3P
+*STM L
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5"
+*MXP 5
+*DFN HPL505032F1060MRD3P
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (HPL505032F1060MRD3P)
+~!Mouser Part Number (810-HPL505032F1060MR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TDK/HPL505032F1060MRD3P?qs=IS%252B4QmGtzzqd3KnOU0RKMQ%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_hpl505032f1_en.pdf)
+~!Height (3.2mm)
+~!3D_Model (HPL505032F1060MRD3P)
+HPL505032F1060MRD3P
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

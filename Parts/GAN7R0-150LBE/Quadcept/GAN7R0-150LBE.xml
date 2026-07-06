@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/18353419/2102173/2.50/3/3/Integrated Circuit/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="r85_31" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="12.204724409449" height="33.464566929133" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="20.07874015748" height="41.338582677165" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="12.204724409449" height="33.464566929133" />
+  </padstyle>
+  <padstyle name="r295_64" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="25.1968503937" height="116.14173228346" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="33.070866141732" height="124.01574803149" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="25.1968503937" height="116.14173228346" />
+  </padstyle>
+  <padstyle name="r220_85" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="33.464566929133" height="86.614173228345" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="41.338582677165" height="94.488188976377" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="33.464566929133" height="86.614173228345" />
+  </padstyle>
+  <footprint name="GAN7R0150LBE" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="r85_31" originx="-51.968503937007" originy="21.456692913386" rotation="0" />
+    <pcbpin number="2" name="2" style="r295_64" originx="0" originy="-25.590551181102" rotation="90" />
+    <pcbpin number="3" name="3" style="r220_85" originx="14.763779527559" originy="21.456692913386" rotation="90" />
+    <line layer="TOP_ASSEMBLY" originx="-62.992125984251" originy="-43.307086614173" endx="62.992125984251" endy="-43.307086614173" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="62.992125984251" originy="-43.307086614173" endx="62.992125984251" endy="43.307086614173" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="62.992125984251" originy="43.307086614173" endx="-62.992125984251" endy="43.307086614173" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-62.992125984251" originy="43.307086614173" endx="-62.992125984251" endy="-43.307086614173" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-102.36220472441" originy="82.67716535433" endx="102.36220472441" endy="82.67716535433" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="102.36220472441" originy="82.67716535433" endx="102.36220472441" endy="-82.67716535433" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="102.36220472441" originy="-82.67716535433" endx="-102.36220472441" endy="-82.67716535433" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-102.36220472441" originy="-82.67716535433" endx="-102.36220472441" endy="82.67716535433" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-86.614173228345" originy="21.456692913386" endx="-86.614173228345" endy="21.456692913386" width="3.9370078740157" />
+    <arc layer="TOP_SILKSCREEN" originx="-84.645669291338" originy="21.456692913386" startangle="180.0" sweepangle="180.0" radius="1.9685039370078" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-82.67716535433" originy="21.456692913386" endx="-82.67716535433" endy="21.456692913386" width="3.9370078740157" />
+    <arc layer="TOP_SILKSCREEN" originx="-84.645669291338" originy="21.456692913386" startangle=".0" sweepangle="180.0" radius="1.9685039370078" width="3.9370078740157" />
+  </footprint>
+  <symbol name="GAN7R0-150LBE" originx="0" originy="0">
+    <line originx="200" originy="100" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-200" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-200" endx="200" endy="-200" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-200" width="0" />
+    <sympin number="1" originx="600" originy="0" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="570" originy="0" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="G" />
+      <text name="pindes" originx="660" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="S" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="600" originy="-100" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="570" originy="-100" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="D" />
+      <text name="pindes" originx="660" originy="-80" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="3" />
+    </sympin>
+  </symbol>
+  <component name="GAN7R0-150LBE" designatorprefix="IC" height="34.409448818897" footprint="GAN7R0150LBE">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="G" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="S" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="D" />
+    <attached_symbol gate="1" name="GAN7R0-150LBE" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://assets.nexperia.com/documents/data-sheet/GAN7R0-150LBE.pdf" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="N-Channel 150 V 28A 28W Surface Mount 3-FCLGA (3.2x2.2) " />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Nexperia" />
+    <text name="Manufacturer_Part_Number" originx="650" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="GAN7R0-150LBE" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+    <text name="Arrow Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+    <text name="Arrow Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+  </component>
+</quadcept_library>

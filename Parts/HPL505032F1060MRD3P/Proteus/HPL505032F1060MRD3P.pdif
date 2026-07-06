@@ -1,0 +1,138 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "HPL505032F1060MRD3P"
+   (description "SMD / SMT Inductors (Coils), L=60nH, L x W x T :5X5X3.2")
+   (family "IND")
+   (package "HPL505032F1060MRD3P")
+   (attribute "Datasheet Link" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_hpl505032f1_en.pdf")
+   (attribute "Geometry.Height" "3.2mm")
+   (attribute "Manufacturer_Name" "TDK")
+   (attribute "Manufacturer_Part_Number" "HPL505032F1060MRD3P")
+   (attribute "Mouser Part Number" "810-HPL505032F1060MR")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/HPL505032F1060MRD3P?qs=IS%252B4QmGtzzqd3KnOU0RKMQ%3D%3D")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "HPL505032F1060MRD3P")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+   )
+  )
+  (symbol "HPL505032F1060MRD3P"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "HPL505032F1060MRD3P"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.5 -2.5)
+      (pt 2.5 -2.5)
+      (pt 2.5 2.5)
+      (pt -2.5 2.5)
+      (pt -2.5 -2.5))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.85 3.5)
+      (pt 3.85 3.5)
+      (pt 3.85 -3.5)
+      (pt -3.85 -3.5)
+      (pt -3.85 3.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 2.5 2.4)
+      (pt 2.5 2.5)
+      (pt -2.5 2.5)
+      (pt -2.5 2.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.5 -2.4)
+      (pt -2.5 -2.5)
+      (pt 2.5 -2.5)
+      (pt 2.5 -2.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.5 1.25)
+      (arc (pt -3.500 1.250) (pt -3.500 1.200) (pt -3.400 1.300) (start 180.0) (sweep 180.0))
+      (pt -3.4 1.25)
+      (arc (pt -3.400 1.250) (pt -3.500 1.200) (pt -3.400 1.300) (start 180.0) (sweep .0))
+      (pt -3.5 1.25)
+      (arc (pt -3.500 1.250) (pt -3.500 1.200) (pt -3.400 1.300) (start 180.0) (sweep 180.0))
+      (pt -3.4 1.25))))
+   (leg 1 (pt -2.350 1.250) (padstack 0))
+   (leg 2 (pt -2.350 -1.250) (padstack 0))
+   (leg 3 (pt 2.350 -1.250) (padstack 0))
+   (leg 4 (pt 2.350 1.250) (padstack 0))
+   (leg 5 (pt 2.000 0.000) (padstack 5))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.000 1.600 0 0 90.000))
+   )
+   (padstack 5
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.900 0 0 90.000))
+   )
+   (model "HPL505032F1060MRD3P.stp"
+    (euler 90 0 0)
+    (offset 0 0 0.3799999952316284)
+   )
+  )
+ )
+)

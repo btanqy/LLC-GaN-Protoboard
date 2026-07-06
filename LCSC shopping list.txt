@@ -1,3 +1,9 @@
-2* PH-00041
+2* 67996-420HLF
 2* FAN73912AMX
-2* CID10N65E3
+2* GAN7R0-150LBE
+2* 9561250802
+1* KAPTON-TAPE40MM
+1* HPL505032F1060MRD3P
+
+2/20 turn transformer
+ferrite core needs a 60um gap (1.08uh magnetizing inductance)

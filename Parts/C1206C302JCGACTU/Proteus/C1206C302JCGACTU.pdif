@@ -1,0 +1,105 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "C1206C302JCGACTU"
+   (description "SMD, MLCC, Ultra-Stable, Low Loss, Class I")
+   (family "CAP")
+   (package "C1206")
+   (attribute "Datasheet Link" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1009_C0G_HV_SMD")
+   (attribute "Manufacturer_Name" "Yageo Group")
+   (attribute "Manufacturer_Part_Number" "C1206C302JCGACTU")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "C1206C302JCGACTU")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "C1206C302JCGACTU"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 220 100) (pt 220 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 0) (pt 220 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "C1206"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.6 0.8)
+      (pt 1.6 0.8)
+      (pt 1.6 -0.8)
+      (pt -1.6 -0.8)
+      (pt -1.6 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (circle
+      (pt -2.4 0) (pt -2.3 0)
+     )
+    )
+   )
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.875 1.8)
+      (pt 2.875 1.8)
+      (pt 2.875 -1.8)
+      (pt -2.875 -1.8)
+      (pt -2.875 1.8))))
+   (leg 1 (pt -1.5 0) (padstack 0))
+   (leg 2 (pt 1.5 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.15 1.8 0 0 90))
+   )
+   (model "C1206C302JCGACTU.stp"
+    (euler 90 0 0)
+    (offset -1.7000000476837158 -0.8999999761581421 0)
+   )
+  )
+ )
+)

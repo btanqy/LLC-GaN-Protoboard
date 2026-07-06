@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "HPL505032F1060MRD3P"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-10-08-11:27:31)
+    (mountForm default
+        (footprintRef "HPL505032F1060MRD3P")
+        (spec "System")
+    )
+)
