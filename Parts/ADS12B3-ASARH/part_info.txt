@@ -1,0 +1,9 @@
+Manufacturer=Sanan Semiconductor
+PartNumber=ADS12B3-ASARH
+PartCategory=Schottky Diode
+PackageCategory=Other
+PinCount=2
+Version=1.6
+Released=2025-11-14 03:59:39
+Downloaded=2026-07-07 05:57:40
+3D=Y

@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=WSC25155R000FEA
+PartCategory=Resistor
+PackageCategory=Resistor Moulded
+PinCount=2
+Version=1.1
+Released=2019-04-25 06:47:06
+Downloaded=2026-07-07 06:15:13
+3D=Y

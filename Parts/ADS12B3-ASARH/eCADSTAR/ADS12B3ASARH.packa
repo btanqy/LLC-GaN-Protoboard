@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "ADS12B3-ASARH"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-11-14-03:59:39)
+    (mountForm default
+        (footprintRef "ADS12B3ASARH")
+        (spec "System")
+    )
+)

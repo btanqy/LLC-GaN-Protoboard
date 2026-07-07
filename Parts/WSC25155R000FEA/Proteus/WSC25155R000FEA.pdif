@@ -1,0 +1,100 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "WSC25155R000FEA"
+   (description "Vishay WSC Series Wirewound Surface Mount Resistor 2515 Case 5 +/-1% 1W +/-50ppm/C")
+   (family "RES")
+   (package "RESM6438X317N")
+   (attribute "Datasheet Link" "http://www.vishay.com/docs/30102/wscwsn.pdf")
+   (attribute "Geometry.Height" "3.171mm")
+   (attribute "Manufacturer_Name" "Vishay")
+   (attribute "Manufacturer_Part_Number" "WSC25155R000FEA")
+   (attribute "Mouser Part Number" "71-WSC25155R000FEA")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/WSC25155R000FEA/?qs=UD2USODSvmLOoM4JvR%252B%2FyQ%3D%3D")
+   (attribute "Arrow Part Number" "WSC25155R000FEA")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/wsc25155r000fea/vishay.html?utm_currency=USD&region=nac")
+   (gate
+    (symbol "WSC25155R000FEA")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "WSC25155R000FEA"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 50) (pt 500 50) (pt 500 -50) (pt 200 -50) (pt 200 50) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RESM6438X317N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -4.175 2.218)
+      (pt 4.175 2.218)
+      (pt 4.175 -2.218)
+      (pt -4.175 -2.218)
+      (pt -4.175 2.218))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.175 1.905)
+      (pt 3.175 1.905)
+      (pt 3.175 -1.905)
+      (pt -3.175 -1.905)
+      (pt -3.175 1.905))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3.175 1.905)
+      (pt -3.175 1.905))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.175 -1.905)
+      (pt 3.175 -1.905))))
+   (leg 1 (pt -2.75 0) (padstack 0))
+   (leg 2 (pt 2.75 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.35 2.55 0 0 90))
+   )
+   (model "WSC25155R000FEA.stp"
+    (euler 90 0 0)
+    (offset 0 0 2.7899999618530273)
+   )
+  )
+ )
+)

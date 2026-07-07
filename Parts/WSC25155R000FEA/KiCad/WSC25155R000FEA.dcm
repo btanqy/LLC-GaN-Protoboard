@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP WSC25155R000FEA
+D Vishay WSC Series Wirewound Surface Mount Resistor 2515 Case 5 +/-1% 1W +/-50ppm/C
+K
+F http://www.vishay.com/docs/30102/wscwsn.pdf
+$ENDCMP
+#
+#End Doc Library

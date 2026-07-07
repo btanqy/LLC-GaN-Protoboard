@@ -1,0 +1,18 @@
+.ADS12B3-ASARH :1 ;SiC Schottky Diodes 1200V 1A,SMBF, Auto Grade
+ADS12B3ASARH
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN ADS12B3-ASARH
+~!Manufacturer_Name (Sanan Semiconductor)
+~!Manufacturer_Part_Number (ADS12B3-ASARH)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://download.luminus.com/datasheets/ADS12B3-ASARH.pdf)
+~!Height (1.3mm)
+~!3D_Model (ADS12B3-ASARH)
+ADS12B3-ASARH
+1.1!U 2.1!U 

@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=CRA2512-FZ-R050ELF
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.2
+Released=2018-01-10 15:59:17
+Downloaded=2026-07-07 06:20:34
+3D=Y

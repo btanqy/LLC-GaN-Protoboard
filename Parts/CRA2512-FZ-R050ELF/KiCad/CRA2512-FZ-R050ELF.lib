@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model CRA2512-FZ-R050ELF
+#/818943/2102173/2.50/2/4/Resistor
+DEF CRA2512-FZ-R050ELF R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "CRA2512-FZ-R050ELF" 550 150 50 H V L CNN
+F2 "RESC6434X90N" 550 50 50 H I L CNN
+F3 "http://www.bourns.com/docs/Product-Datasheets/CRA.pdf" 550 -50 50 H I L CNN
+F4 "Current Sense Chip Resistor, 3w, R050 Bourns CRA Series High Power Surface Mount Resistor 2512 Case 50m +/-1% 3W +/-75ppm/C" 550 -150 50 H I L CNN "Description"
+F5 "0.9" 550 -250 50 H I L CNN "Height"
+F6 "Bourns" 550 -350 50 H I L CNN "Manufacturer_Name"
+F7 "CRA2512-FZ-R050ELF" 550 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "652-CRA2512FZ-R50ELF" 550 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Bourns/CRA2512-FZ-R050ELF?qs=y%2FafN2TeCup4WcOFvohA0Q%3D%3D" 550 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "CRA2512-FZ-R050ELF" 550 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/cra2512-fz-r050elf/bourns?utm_currency=USD&region=nac" 550 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+ENDDRAW
+ENDDEF
+#
+#End Library

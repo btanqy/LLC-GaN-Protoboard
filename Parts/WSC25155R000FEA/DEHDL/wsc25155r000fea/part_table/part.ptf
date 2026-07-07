@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'WSC25155R000FEA'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Vishay", "WSC25155R000FEA" (!) = "", "RESM6438X317N", "Resistor Moulded", "71-WSC25155R000FEA", "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/WSC25155R000FEA/?qs=UD2USODSvmLOoM4JvR%252B%2FyQ%3D%3D", "WSC25155R000FEA", "https://www.arrow.com/en/products/wsc25155r000fea/vishay.html?utm_currency=USD&region=nac", "Vishay WSC Series Wirewound Surface Mount Resistor 2515 Case 5 +/-1% 1W +/-50ppm/C", "http://www.vishay.com/docs/30102/wscwsn.pdf", "3.171 mm"
+END_PART
+
+END.

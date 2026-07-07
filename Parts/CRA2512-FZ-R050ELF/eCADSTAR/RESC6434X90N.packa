@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CRA2512-FZ-R050ELF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-02-24-12:06:17)
+    (mountForm default
+        (footprintRef "RESC6434X90N")
+        (spec "System")
+    )
+)

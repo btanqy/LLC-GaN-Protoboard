@@ -1,0 +1,18 @@
+.5019 :1 ;Circuit Board Hardware - PCB TEST POINT
+"5019"
+*STM TP
+*NGS
+*PLB 1="1"
+*MXP 1
+*DFN 5019
+~!Manufacturer_Name (Keystone Electronics)
+~!Manufacturer_Part_Number (5019)
+~!Mouser Part Number (534-5019)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D)
+~!Arrow Part Number (5019)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe)
+~!Link Datasheet (https://www.keyelco.com/product-pdf.cfm?p=1357)
+~!Height (2.42mm)
+~!3D_Model (5019)
+"5019"
+1.1!U 

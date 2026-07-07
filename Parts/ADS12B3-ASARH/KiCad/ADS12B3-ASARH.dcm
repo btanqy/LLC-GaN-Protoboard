@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADS12B3-ASARH
+D SiC Schottky Diodes 1200V 1A,SMBF, Auto Grade
+K
+F https://download.luminus.com/datasheets/ADS12B3-ASARH.pdf
+$ENDCMP
+#
+#End Doc Library

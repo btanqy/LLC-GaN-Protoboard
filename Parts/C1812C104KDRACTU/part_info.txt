@@ -1,0 +1,9 @@
+Manufacturer=Yageo Group
+PartNumber=C1812C104KDRACTU
+PartCategory=Capacitor
+PackageCategory=Other
+PinCount=2
+Version=5.1
+Released=2018-05-21 10:16:18
+Downloaded=2026-07-07 06:06:25
+3D=Y

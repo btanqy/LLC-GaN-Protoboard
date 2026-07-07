@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ADS12B3_ASARH'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Sanan Semiconductor", "ADS12B3-ASARH" (!) = "", "ADS12B3ASARH", "Other", "", "", "", "", "SiC Schottky Diodes 1200V 1A,SMBF, Auto Grade", "https://download.luminus.com/datasheets/ADS12B3-ASARH.pdf", "1.3 mm"
+END_PART
+
+END.

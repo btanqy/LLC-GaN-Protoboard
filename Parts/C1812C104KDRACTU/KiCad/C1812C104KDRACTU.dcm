@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C1812C104KDRACTU
+D SMD, MLCC, High Voltage, Temperature Stable
+K
+F https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD
+$ENDCMP
+#
+#End Doc Library

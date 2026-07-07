@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "WSC25155R000FEA"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-06-06-11:10:45)
+    (mountForm default
+        (footprintRef "RESM6438X317N")
+        (spec "System")
+    )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "C1812C104KDRACTU"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-04-05-16:42:11)
+    (mountForm default
+        (footprintRef "C1812")
+        (spec "System")
+    )
+)

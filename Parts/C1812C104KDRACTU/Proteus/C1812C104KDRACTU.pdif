@@ -1,0 +1,106 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "C1812C104KDRACTU"
+   (description "SMD, MLCC, High Voltage, Temperature Stable")
+   (family "CAP")
+   (package "C1812")
+   (attribute "Datasheet Link" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD")
+   (attribute "Geometry.Height" "1.55mm")
+   (attribute "Manufacturer_Name" "Yageo Group")
+   (attribute "Manufacturer_Part_Number" "C1812C104KDRACTU")
+   (attribute "Mouser Part Number" "80-C1812C104KDRACTU")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KEMET/C1812C104KDRACTU?qs=bKSwwZi%2FkPDxKxr8rInknw%3D%3D")
+   (attribute "Arrow Part Number" "C1812C104KDRACTU")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/c1812c104kdractu/kemet-corporation?region=nac")
+   (gate
+    (symbol "C1812C104KDRACTU")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "C1812C104KDRACTU"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 220 100) (pt 220 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 0) (pt 220 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "C1812"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -2.25 1.6)
+      (pt 2.25 1.6)
+      (pt 2.25 -1.6)
+      (pt -2.25 -1.6)
+      (pt -2.25 1.6))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (circle
+      (pt -3.25 0) (pt -3.15 0)
+     )
+    )
+   )
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.55 2.6)
+      (pt 3.55 2.6)
+      (pt 3.55 -2.6)
+      (pt -3.55 -2.6)
+      (pt -3.55 2.6))))
+   (leg 1 (pt -2.05 0) (padstack 0))
+   (leg 2 (pt 2.05 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.4 3.5 0 0 90))
+   )
+   (model "C1812C104KDRACTU.stp"
+    (euler 90 0 0)
+    (offset 98.11000061035156 42.529998779296875 -10.640000343322754)
+   )
+  )
+ )
+)

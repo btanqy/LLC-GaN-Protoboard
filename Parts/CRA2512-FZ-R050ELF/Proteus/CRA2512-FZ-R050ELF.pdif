@@ -1,0 +1,93 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "CRA2512-FZ-R050ELF"
+   (description "Current Sense Chip Resistor, 3w, R050 Bourns CRA Series High Power Surface Mount Resistor 2512 Case 50m +/-1% 3W +/-75ppm/C")
+   (family "RES")
+   (package "RESC6434X90N")
+   (attribute "Datasheet Link" "http://www.bourns.com/docs/Product-Datasheets/CRA.pdf")
+   (attribute "Geometry.Height" "0.9mm")
+   (attribute "Manufacturer_Name" "Bourns")
+   (attribute "Manufacturer_Part_Number" "CRA2512-FZ-R050ELF")
+   (attribute "Mouser Part Number" "652-CRA2512FZ-R50ELF")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CRA2512-FZ-R050ELF?qs=y%2FafN2TeCup4WcOFvohA0Q%3D%3D")
+   (attribute "Arrow Part Number" "CRA2512-FZ-R050ELF")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/cra2512-fz-r050elf/bourns?utm_currency=USD&region=nac")
+   (gate
+    (symbol "CRA2512-FZ-R050ELF")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "CRA2512-FZ-R050ELF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 50) (pt 500 50) (pt 500 -50) (pt 200 -50) (pt 200 50) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RESC6434X90N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.925 2.05)
+      (pt 3.925 2.05)
+      (pt 3.925 -2.05)
+      (pt -3.925 -2.05)
+      (pt -3.925 2.05))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.225 1.675)
+      (pt 3.225 1.675)
+      (pt 3.225 -1.675)
+      (pt -3.225 -1.675)
+      (pt -3.225 1.675))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 1.575)
+      (pt 0 -1.575))))
+   (leg 1 (pt -2.9 0) (padstack 0))
+   (leg 2 (pt 2.9 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.55 3.55 0 0 90))
+   )
+   (model "CRA2512-FZ-R050ELF.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

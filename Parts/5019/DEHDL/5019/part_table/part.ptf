@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '5019'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Keystone Electronics", "5019" (!) = "", "5019", "Other", "534-5019", "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D", "5019", "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe", "Circuit Board Hardware - PCB TEST POINT", "https://www.keyelco.com/product-pdf.cfm?p=1357", "2.42 mm"
+END_PART
+
+END.

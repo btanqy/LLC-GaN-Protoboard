@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_716646"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-21-10:16:18)
+    (utime 2026-05-02-07:22:59)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "C1812C104KDRACTU")
+)
+
+
+(pinAssign "ECS_716646"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-21-10:16:18)
+    (utime 2026-05-02-07:22:59)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_716646")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "C1812C104KDRACTU")
+)
+
+
+(part "C1812C104KDRACTU"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-21-10:16:18)
+    (utime 2026-05-02-07:22:59)
+    (packageRef "C1812C104KDRACTU")
+    (pinAssignRef "ECS_716646")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "SMD, MLCC, High Voltage, Temperature Stable")
+    (property "Manufacturer_Name" "Yageo Group")
+    (property "Manufacturer_Part_Number" "C1812C104KDRACTU")
+    (property "Mouser_Part_Number" "80-C1812C104KDRACTU")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/KEMET/C1812C104KDRACTU?qs=bKSwwZi%2FkPDxKxr8rInknw%3D%3D")
+    (property "Arrow_Part_Number" "C1812C104KDRACTU")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/c1812c104kdractu/kemet-corporation?region=nac")
+    (property "Datasheet_Link" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD")
+    (property "compAreaTopHeight" 1.55)
+)
+
+

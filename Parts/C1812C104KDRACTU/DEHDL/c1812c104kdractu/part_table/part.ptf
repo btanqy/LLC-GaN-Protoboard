@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C1812C104KDRACTU'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Yageo Group", "C1812C104KDRACTU" (!) = "", "C1812", "Other", "80-C1812C104KDRACTU", "https://www.mouser.co.uk/ProductDetail/KEMET/C1812C104KDRACTU?qs=bKSwwZi%2FkPDxKxr8rInknw%3D%3D", "C1812C104KDRACTU", "https://www.arrow.com/en/products/c1812c104kdractu/kemet-corporation?region=nac", "SMD, MLCC, High Voltage, Temperature Stable", "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD", "1.55 mm"
+END_PART
+
+END.

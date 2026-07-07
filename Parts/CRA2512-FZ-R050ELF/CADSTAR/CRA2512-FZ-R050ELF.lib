@@ -1,0 +1,18 @@
+.CRA2512-FZ-R050ELF :1 ;Current Sense Chip Resistor, 3w, R050 Bourns CRA Series High Power Surface Mount Resistor 2512 Case 50m +/-1% 3W +/-75ppm/C
+RESC6434X90N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN CRA2512-FZ-R050ELF
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (CRA2512-FZ-R050ELF)
+~!Mouser Part Number (652-CRA2512FZ-R50ELF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/CRA2512-FZ-R050ELF?qs=y%2FafN2TeCup4WcOFvohA0Q%3D%3D)
+~!Arrow Part Number (CRA2512-FZ-R050ELF)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/cra2512-fz-r050elf/bourns?utm_currency=USD&region=nac)
+~!Link Datasheet (http://www.bourns.com/docs/Product-Datasheets/CRA.pdf)
+~!Height (0.9mm)
+~!3D_Model (CRA2512-FZ-R050ELF)
+CRA2512-FZ-R050ELF
+1.1!U 2.1!U 

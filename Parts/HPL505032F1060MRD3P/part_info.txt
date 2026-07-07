@@ -1,9 +1,0 @@
-Manufacturer=TDK
-PartNumber=HPL505032F1060MRD3P
-PartCategory=Inductor
-PackageCategory=Other
-PinCount=5
-Version=3.3
-Released=2021-10-08 11:27:30
-Downloaded=2026-07-06 16:46:05
-3D=Y

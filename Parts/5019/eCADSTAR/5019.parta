@@ -1,0 +1,64 @@
+(Japanese_coding: sjis)
+(function "ECS_293465"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-10-13:02:02)
+    (utime 2024-03-31-15:46:46)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+    )
+    (property "symbolName" "5019")
+)
+
+
+(pinAssign "ECS_293465"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-10-13:02:02)
+    (utime 2024-03-31-15:46:46)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_293465")
+                (port "1" (match "1"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "5019")
+)
+
+
+(part "5019"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-10-13:02:02)
+    (utime 2024-03-31-15:46:46)
+    (packageRef "5019")
+    (pinAssignRef "ECS_293465")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "TP")
+    (property "description" "Circuit Board Hardware - PCB TEST POINT")
+    (property "Manufacturer_Name" "Keystone Electronics")
+    (property "Manufacturer_Part_Number" "5019")
+    (property "Mouser_Part_Number" "534-5019")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D")
+    (property "Arrow_Part_Number" "5019")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe")
+    (property "Datasheet_Link" "https://www.keyelco.com/product-pdf.cfm?p=1357")
+    (property "compAreaTopHeight" 2.42)
+)
+
+

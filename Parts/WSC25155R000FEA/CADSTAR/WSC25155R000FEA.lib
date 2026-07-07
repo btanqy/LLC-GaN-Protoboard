@@ -1,0 +1,18 @@
+.WSC25155R000FEA :1 ;Vishay WSC Series Wirewound Surface Mount Resistor 2515 Case 5 +/-1% 1W +/-50ppm/C
+RESM6438X317N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN WSC25155R000FEA
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (WSC25155R000FEA)
+~!Mouser Part Number (71-WSC25155R000FEA)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Vishay-Dale/WSC25155R000FEA/?qs=UD2USODSvmLOoM4JvR%252B%2FyQ%3D%3D)
+~!Arrow Part Number (WSC25155R000FEA)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/wsc25155r000fea/vishay.html?utm_currency=USD&region=nac)
+~!Link Datasheet (http://www.vishay.com/docs/30102/wscwsn.pdf)
+~!Height (3.171mm)
+~!3D_Model (WSC25155R000FEA)
+WSC25155R000FEA
+1.1!U 2.1!U 

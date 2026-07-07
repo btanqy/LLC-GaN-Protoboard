@@ -1,0 +1,90 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "5019"
+   (description "Circuit Board Hardware - PCB TEST POINT")
+   (family "ANA")
+   (package "5019")
+   (attribute "Datasheet Link" "https://www.keyelco.com/product-pdf.cfm?p=1357")
+   (attribute "Geometry.Height" "2.42mm")
+   (attribute "Manufacturer_Name" "Keystone Electronics")
+   (attribute "Manufacturer_Part_Number" "5019")
+   (attribute "Mouser Part Number" "534-5019")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D")
+   (attribute "Arrow Part Number" "5019")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe")
+   (gate
+    (symbol "5019")
+    (pin "1" 1 PS)
+   )
+  )
+  (symbol "5019"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -100) (pt 200 -100) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "5019"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.905 0.51)
+      (pt 1.905 0.51)
+      (pt 1.905 -0.51)
+      (pt -1.905 -0.51)
+      (pt -1.905 0.51))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.905 2.015)
+      (pt 2.905 2.015)
+      (pt 2.905 -2.015)
+      (pt -2.905 -2.015)
+      (pt -2.905 2.015))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.4 0)
+      (arc (pt -2.400 0.000) (pt -2.500 -0.050) (pt -2.400 0.050) (start 180.0) (sweep .0))
+      (pt -2.5 0)
+      (arc (pt -2.500 0.000) (pt -2.500 -0.050) (pt -2.400 0.050) (start 180.0) (sweep 180.0))
+      (pt -2.4 0))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.030 3.800 0 0 0.000))
+   )
+   (model "5019.stp"
+    (euler 90 0 0)
+    (offset 0 0 1.1399999856948853)
+   )
+  )
+ )
+)

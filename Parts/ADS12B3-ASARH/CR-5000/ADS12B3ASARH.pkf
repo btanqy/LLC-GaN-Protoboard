@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "ADS12B3ASARH"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "ADS12B3ASARH")
+        (spec "default")
+    )
+)

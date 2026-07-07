@@ -1,0 +1,18 @@
+.C1812C104KDRACTU :1 ;SMD, MLCC, High Voltage, Temperature Stable
+C1812
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN C1812C104KDRACTU
+~!Manufacturer_Name (Yageo Group)
+~!Manufacturer_Part_Number (C1812C104KDRACTU)
+~!Mouser Part Number (80-C1812C104KDRACTU)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/KEMET/C1812C104KDRACTU?qs=bKSwwZi%2FkPDxKxr8rInknw%3D%3D)
+~!Arrow Part Number (C1812C104KDRACTU)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/c1812c104kdractu/kemet-corporation?region=nac)
+~!Link Datasheet (https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD)
+~!Height (1.55mm)
+~!3D_Model (C1812C104KDRACTU)
+C1812C104KDRACTU
+1.1!U 2.1!U 

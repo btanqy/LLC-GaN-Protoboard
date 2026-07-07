@@ -53,7 +53,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 23; 1536, 773]
+    Location      [0, 26; 1536, 776]
     ZoomFactor    1.96257
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -266,7 +266,7 @@ Plecs {
       Type          Ground
       Name          "Ground"
       Show          off
-      Position      [385, 270]
+      Position      [385, 330]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -275,7 +275,7 @@ Plecs {
       Type          Ground
       Name          "Ground1"
       Show          off
-      Position      [315, 270]
+      Position      [315, 330]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -913,20 +913,6 @@ Plecs {
     }
     Component {
       Type          Resistor
-      Name          "R2"
-      Show          on
-      Position      [130, 45]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "R"
-        Value         "1e-6"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
       Name          "R3"
       Show          on
       Position      [340, 90]
@@ -1024,6 +1010,91 @@ Plecs {
           KeepBaseline  off
           BaselineValue 0
         }
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe3"
+      Show          on
+      Position      [95, 305]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "R2"
+        Path          ""
+        Signals       {"Resistor voltage", "Resistor current"}
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope4"
+      Show          on
+      Position      [160, 305]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1536, 849]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAMcAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":170,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Resistor
+      Name          "R2"
+      Show          on
+      Position      [315, 290]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "R"
+        Value         "50e-3"
+        Show          off
       }
     }
     Connection {
@@ -1206,26 +1277,11 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "FET2"
-      SrcTerminal   1
-      Points        [315, 90]
-      Branch {
-        Points        [315, 45]
-        DstComponent  "R2"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "R3"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "FET3"
       SrcTerminal   3
       Points        [315, 235]
       Branch {
-        DstComponent  "Ground1"
+        DstComponent  "R2"
         DstTerminal   1
       }
       Branch {
@@ -1233,14 +1289,6 @@ Plecs {
         DstComponent  "C4"
         DstTerminal   2
       }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "V_dc"
-      SrcTerminal   1
-      Points        [80, 45]
-      DstComponent  "R2"
-      DstTerminal   2
     }
     Connection {
       Type          Wire
@@ -1263,6 +1311,35 @@ Plecs {
       SrcComponent  "Probe2"
       SrcTerminal   1
       DstComponent  "Scope3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe3"
+      SrcTerminal   1
+      DstComponent  "Scope4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "FET2"
+      SrcTerminal   1
+      Points        [315, 90]
+      Branch {
+        DstComponent  "R3"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [315, 45; 80, 45]
+        DstComponent  "V_dc"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "R2"
+      SrcTerminal   2
+      DstComponent  "Ground1"
       DstTerminal   1
     }
   }

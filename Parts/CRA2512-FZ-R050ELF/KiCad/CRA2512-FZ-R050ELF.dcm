@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CRA2512-FZ-R050ELF
+D Current Sense Chip Resistor, 3w, R050 Bourns CRA Series High Power Surface Mount Resistor 2512 Case 50m +/-1% 3W +/-75ppm/C
+K
+F http://www.bourns.com/docs/Product-Datasheets/CRA.pdf
+$ENDCMP
+#
+#End Doc Library
