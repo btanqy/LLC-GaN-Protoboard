@@ -3569,7 +3569,7 @@
 	)
 	(rectangle
 		(start 16.51 20.32)
-		(end 279.4 121.92)
+		(end 279.4 106.68)
 		(stroke
 			(width 0)
 			(type default)
@@ -3578,6 +3578,18 @@
 			(type none)
 		)
 		(uuid "01fcac73-9ad6-40c3-9eaa-8b8bd732045c")
+	)
+	(rectangle
+		(start 165.1 109.22)
+		(end 284.48 162.56)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "54e37464-a57a-4a67-b293-ca73a9a70685")
 	)
 	(rectangle
 		(start 158.75 196.85)
@@ -3653,6 +3665,16 @@
 		)
 		(uuid "8c4b13c2-d8cc-43f8-bfc2-9888c8476c3b")
 	)
+	(text "buck"
+		(exclude_from_sim no)
+		(at 179.324 115.316 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "e1f73ad4-1a7b-4aca-b595-a07febed6fc2")
+	)
 	(junction
 		(at 153.67 77.47)
 		(diameter 0)
@@ -3672,7 +3694,13 @@
 		(uuid "21b73b09-04d4-4f93-8e38-666aa9708f72")
 	)
 	(junction
-		(at 119.38 96.52)
+		(at 142.24 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25b3975e-39ea-4d3a-8952-e746cf29a054")
+	)
+	(junction
+		(at 251.46 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27176981-9360-4f20-8f8b-dc025a25cb7c")
@@ -3684,7 +3712,7 @@
 		(uuid "3b1e4b48-66ea-4054-89a7-bdfd6f0bd1fa")
 	)
 	(junction
-		(at 119.38 87.63)
+		(at 251.46 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "460ac522-52ce-421a-bf95-add1292e6395")
@@ -3696,7 +3724,7 @@
 		(uuid "46bc8ebb-2746-4a19-a332-52358663d4e2")
 	)
 	(junction
-		(at 86.36 87.63)
+		(at 218.44 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5388a260-822a-467d-b780-b7258e49f1e1")
@@ -3718,12 +3746,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56a6e0ba-5e01-4346-afa6-f18acc11376a")
-	)
-	(junction
-		(at 142.24 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f491531-47e4-4ce4-99f9-db5d227cabe1")
 	)
 	(junction
 		(at 179.07 39.37)
@@ -3756,13 +3778,13 @@
 		(uuid "853ad807-024b-4201-a786-2a990964a20c")
 	)
 	(junction
-		(at 88.9 105.41)
+		(at 220.98 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f1eaaa1-de5d-41de-b8b6-bc0b4293c0f6")
 	)
 	(junction
-		(at 129.54 96.52)
+		(at 261.62 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91424194-c33b-4fb7-b7fc-a2d41fe84063")
@@ -3774,13 +3796,13 @@
 		(uuid "9ffc6547-344d-4297-8487-f99819cc787c")
 	)
 	(junction
-		(at 83.82 105.41)
+		(at 215.9 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0e82b6e-8584-457d-a352-7dc4e18976a6")
 	)
 	(junction
-		(at 129.54 111.76)
+		(at 261.62 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1be0546-7781-4588-ab4e-64497e7bdaf7")
@@ -3798,7 +3820,7 @@
 		(uuid "f513b554-3f0a-48cc-baaa-a8daef6e4bc3")
 	)
 	(junction
-		(at 119.38 104.14)
+		(at 251.46 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff86e3fd-0b76-480b-b59d-28cc390c9871")
@@ -3835,7 +3857,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 96.52) (xy 129.54 96.52)
+			(xy 251.46 138.43) (xy 261.62 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3865,7 +3887,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 110.49) (xy 35.56 113.03)
+			(xy 102.87 86.36) (xy 102.87 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3895,7 +3917,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 110.49) (xy 35.56 110.49)
+			(xy 101.6 86.36) (xy 102.87 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3925,7 +3947,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 87.63) (xy 43.18 102.87)
+			(xy 175.26 129.54) (xy 175.26 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3965,7 +3987,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 87.63) (xy 119.38 87.63)
+			(xy 250.19 129.54) (xy 251.46 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3975,7 +3997,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 102.87 87.63)
+			(xy 218.44 129.54) (xy 234.95 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3995,7 +4017,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 104.14) (xy 119.38 104.14)
+			(xy 254 146.05) (xy 251.46 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4025,7 +4047,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 87.63) (xy 86.36 87.63)
+			(xy 199.39 129.54) (xy 218.44 129.54)
 		)
 		(stroke
 			(width 0)
@@ -4045,7 +4067,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 105.41) (xy 88.9 105.41)
+			(xy 215.9 147.32) (xy 220.98 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4085,7 +4107,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 111.76) (xy 129.54 106.68)
+			(xy 261.62 153.67) (xy 261.62 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4155,7 +4177,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 119.38 96.52)
+			(xy 251.46 129.54) (xy 251.46 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4165,7 +4187,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 113.03) (xy 129.54 111.76)
+			(xy 261.62 154.94) (xy 261.62 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4205,7 +4227,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 87.63) (xy 43.18 87.63)
+			(xy 191.77 129.54) (xy 175.26 129.54)
 		)
 		(stroke
 			(width 0)
@@ -4225,7 +4247,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 110.49) (xy 26.67 110.49)
+			(xy 92.71 86.36) (xy 93.98 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4295,7 +4317,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 93.98) (xy 142.24 101.6)
+			(xy 142.24 93.98) (xy 142.24 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4315,7 +4337,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 113.03) (xy 25.4 110.49)
+			(xy 92.71 88.9) (xy 92.71 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4365,7 +4387,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 129.54 99.06)
+			(xy 261.62 138.43) (xy 261.62 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4375,7 +4397,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 105.41) (xy 97.79 105.41)
+			(xy 220.98 147.32) (xy 229.87 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4385,7 +4407,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 86.36 102.87)
+			(xy 218.44 129.54) (xy 218.44 144.78)
 		)
 		(stroke
 			(width 0)
@@ -4475,7 +4497,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 105.41) (xy 88.9 106.68)
+			(xy 220.98 147.32) (xy 220.98 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4485,7 +4507,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 107.95) (xy 83.82 105.41)
+			(xy 215.9 149.86) (xy 215.9 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4515,7 +4537,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 102.87) (xy 83.82 102.87)
+			(xy 218.44 144.78) (xy 215.9 144.78)
 		)
 		(stroke
 			(width 0)
@@ -4614,7 +4636,7 @@
 		(uuid "1b737b8a-01be-4c13-a487-5e7e30babe34")
 	)
 	(label "VIN"
-		(at 113.03 105.41 0)
+		(at 245.11 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4624,7 +4646,7 @@
 		(uuid "1f27df5c-b8fb-4bf9-93fc-bd2ef9ba8882")
 	)
 	(label "FB"
-		(at 43.18 107.95 0)
+		(at 175.26 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4714,7 +4736,7 @@
 		(uuid "efa749be-c298-46a2-a662-2925a2c6d542")
 	)
 	(label "FB"
-		(at 121.92 104.14 0)
+		(at 254 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4769,7 +4791,7 @@
 	)
 	(hierarchical_label "VIN_RECT"
 		(shape input)
-		(at 92.71 105.41 90)
+		(at 224.79 147.32 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4993,7 +5015,7 @@
 	)
 	(symbol
 		(lib_id "ADS12B3-ASARH:ADS12B3-ASARH")
-		(at 95.25 105.41 0)
+		(at 227.33 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5004,7 +5026,7 @@
 		(fields_autoplaced yes)
 		(uuid "058a2621-eb59-416d-a381-0e9548440441")
 		(property "Reference" "D5"
-			(at 105.41 97.79 0)
+			(at 237.49 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5014,7 +5036,7 @@
 			)
 		)
 		(property "Value" "ADS12B3-ASARH"
-			(at 105.41 100.33 0)
+			(at 237.49 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5024,7 +5046,7 @@
 			)
 		)
 		(property "Footprint" "ADS12B3-ASARH:ADS12B3ASARH"
-			(at 107.95 199.06 0)
+			(at 240.03 240.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5036,7 +5058,7 @@
 			)
 		)
 		(property "Datasheet" "https://download.luminus.com/datasheets/ADS12B3-ASARH.pdf"
-			(at 107.95 299.06 0)
+			(at 240.03 340.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5048,7 +5070,7 @@
 			)
 		)
 		(property "Description" "SiC Schottky Diodes 1200V 1A,SMBF, Auto Grade"
-			(at 95.25 105.41 0)
+			(at 227.33 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5059,7 +5081,7 @@
 			)
 		)
 		(property "Height" "1.3"
-			(at 107.95 499.06 0)
+			(at 240.03 540.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5071,7 +5093,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Sanan Semiconductor"
-			(at 107.95 599.06 0)
+			(at 240.03 640.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5083,7 +5105,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ADS12B3-ASARH"
-			(at 107.95 699.06 0)
+			(at 240.03 740.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5095,7 +5117,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 107.95 799.06 0)
+			(at 240.03 840.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5107,7 +5129,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 107.95 899.06 0)
+			(at 240.03 940.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5119,7 +5141,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 107.95 999.06 0)
+			(at 240.03 1040.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5131,7 +5153,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 107.95 1099.06 0)
+			(at 240.03 1140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5237,7 +5259,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 30.48 110.49 90)
+		(at 97.79 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5248,7 +5270,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f9ed333-d0b2-4a41-8fcb-43f47f6c66b6")
 		(property "Reference" "R6"
-			(at 30.48 104.14 90)
+			(at 97.79 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5258,7 +5280,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 30.48 106.68 90)
+			(at 97.79 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5268,7 +5290,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 112.268 90)
+			(at 97.79 88.138 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5279,7 +5301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 110.49 0)
+			(at 97.79 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5290,7 +5312,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 30.48 110.49 0)
+			(at 97.79 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5558,7 +5580,7 @@
 	)
 	(symbol
 		(lib_id "C1206C302JCGACTU:C1206C302JCGACTU")
-		(at 245.11 109.22 0)
+		(at 245.11 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5569,7 +5591,7 @@
 		(fields_autoplaced yes)
 		(uuid "1be39289-306a-4eb5-b93c-d713ea1f4797")
 		(property "Reference" "C2"
-			(at 251.46 101.6 0)
+			(at 251.46 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5579,7 +5601,7 @@
 			)
 		)
 		(property "Value" "C1206C302JCGACTU"
-			(at 251.46 104.14 0)
+			(at 251.46 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5589,7 +5611,7 @@
 			)
 		)
 		(property "Footprint" "C1206C302JCGACTU:C1206"
-			(at 254 205.41 0)
+			(at 254 172.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5601,7 +5623,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1009_C0G_HV_SMD"
-			(at 254 305.41 0)
+			(at 254 272.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5613,7 +5635,7 @@
 			)
 		)
 		(property "Description" "SMD, MLCC, Ultra-Stable, Low Loss, Class I"
-			(at 245.11 109.22 0)
+			(at 245.11 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5624,7 +5646,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 254 505.41 0)
+			(at 254 472.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5636,7 +5658,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo Group"
-			(at 254 605.41 0)
+			(at 254 572.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5648,7 +5670,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C1206C302JCGACTU"
-			(at 254 705.41 0)
+			(at 254 672.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5660,7 +5682,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 254 805.41 0)
+			(at 254 772.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5672,7 +5694,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 254 905.41 0)
+			(at 254 872.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5684,7 +5706,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 254 1005.41 0)
+			(at 254 972.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5696,7 +5718,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 254 1105.41 0)
+			(at 254 1072.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6213,7 +6235,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 111.76 0)
+		(at 251.46 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6224,7 +6246,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ad4e5fd-b9ac-42c9-b39a-74f4a3f79753")
 		(property "Reference" "#PWR016"
-			(at 119.38 118.11 0)
+			(at 251.46 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6235,7 +6257,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 116.84 0)
+			(at 251.46 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6245,7 +6267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 111.76 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6256,7 +6278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 111.76 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6267,7 +6289,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 111.76 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6291,7 +6313,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 105.41 270)
+		(at 175.26 147.32 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6302,7 +6324,7 @@
 		(fields_autoplaced yes)
 		(uuid "33fdeee1-0eae-4217-867a-53eed0a42212")
 		(property "Reference" "#PWR014"
-			(at 36.83 105.41 0)
+			(at 168.91 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6313,7 +6335,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 105.4099 90)
+			(at 171.45 147.3199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6324,7 +6346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 105.41 0)
+			(at 175.26 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6335,7 +6357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 105.41 0)
+			(at 175.26 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6346,7 +6368,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 105.41 0)
+			(at 175.26 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6452,7 +6474,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 114.3 0)
+		(at 220.98 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6463,7 +6485,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e5fa690-d835-46f5-8f70-9b9b6b377da3")
 		(property "Reference" "#PWR015"
-			(at 88.9 120.65 0)
+			(at 220.98 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6474,7 +6496,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 119.38 0)
+			(at 220.98 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6484,7 +6506,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 114.3 0)
+			(at 220.98 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6495,7 +6517,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 114.3 0)
+			(at 220.98 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6506,7 +6528,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 114.3 0)
+			(at 220.98 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6530,7 +6552,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 113.03 0)
+		(at 102.87 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6541,7 +6563,7 @@
 		(fields_autoplaced yes)
 		(uuid "42100736-5281-4a8a-b3a2-1708c39e8e4a")
 		(property "Reference" "#PWR020"
-			(at 35.56 119.38 0)
+			(at 102.87 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6552,7 +6574,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 35.56 118.11 0)
+			(at 102.87 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6562,7 +6584,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 113.03 0)
+			(at 102.87 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6573,7 +6595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 113.03 0)
+			(at 102.87 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6584,7 +6606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 113.03 0)
+			(at 102.87 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6608,7 +6630,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 100.33 0)
+		(at 251.46 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6619,7 +6641,7 @@
 		(fields_autoplaced yes)
 		(uuid "4717b7bc-f40a-4d89-8bfa-d6091bd0e2e7")
 		(property "Reference" "R4"
-			(at 121.92 99.0599 0)
+			(at 254 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6630,7 +6652,7 @@
 			)
 		)
 		(property "Value" "118k"
-			(at 121.92 101.5999 0)
+			(at 254 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6641,7 +6663,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
-			(at 117.602 100.33 90)
+			(at 249.682 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6652,7 +6674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 100.33 0)
+			(at 251.46 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6663,7 +6685,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 119.38 100.33 0)
+			(at 251.46 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6773,7 +6795,7 @@
 	)
 	(symbol
 		(lib_id "5019:5019")
-		(at 129.54 111.76 0)
+		(at 261.62 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6784,7 +6806,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d1290f8-4ad6-4fde-9c58-1747dcdd5eb4")
 		(property "Reference" "TP11"
-			(at 146.05 110.4899 0)
+			(at 278.13 152.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6795,7 +6817,7 @@
 			)
 		)
 		(property "Value" "5019"
-			(at 146.05 113.0299 0)
+			(at 278.13 154.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6806,7 +6828,7 @@
 			)
 		)
 		(property "Footprint" "5019:5019"
-			(at 146.05 206.68 0)
+			(at 278.13 248.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6818,7 +6840,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
-			(at 146.05 306.68 0)
+			(at 278.13 348.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6830,7 +6852,7 @@
 			)
 		)
 		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
-			(at 129.54 111.76 0)
+			(at 261.62 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6841,7 +6863,7 @@
 			)
 		)
 		(property "Height" "2.42"
-			(at 146.05 506.68 0)
+			(at 278.13 548.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6853,7 +6875,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 146.05 606.68 0)
+			(at 278.13 648.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6865,7 +6887,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "5019"
-			(at 146.05 706.68 0)
+			(at 278.13 748.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6877,7 +6899,7 @@
 			)
 		)
 		(property "Mouser Part Number" "534-5019"
-			(at 146.05 806.68 0)
+			(at 278.13 848.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6889,7 +6911,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
-			(at 146.05 906.68 0)
+			(at 278.13 948.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6901,7 +6923,7 @@
 			)
 		)
 		(property "Arrow Part Number" "5019"
-			(at 146.05 1006.68 0)
+			(at 278.13 1048.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6913,7 +6935,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
-			(at 146.05 1106.68 0)
+			(at 278.13 1148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7103,7 +7125,7 @@
 	)
 	(symbol
 		(lib_id "5019:5019")
-		(at 86.36 87.63 90)
+		(at 218.44 129.54 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7114,7 +7136,7 @@
 		(fields_autoplaced yes)
 		(uuid "51067079-0577-497a-98ce-d43a1f42c194")
 		(property "Reference" "TP9"
-			(at 90.17 76.1999 90)
+			(at 222.25 118.1099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7125,7 +7147,7 @@
 			)
 		)
 		(property "Value" "5019"
-			(at 90.17 78.7399 90)
+			(at 222.25 120.6499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7136,7 +7158,7 @@
 			)
 		)
 		(property "Footprint" "5019:5019"
-			(at 181.28 71.12 0)
+			(at 313.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7148,7 +7170,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
-			(at 281.28 71.12 0)
+			(at 413.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7160,7 +7182,7 @@
 			)
 		)
 		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
-			(at 86.36 87.63 0)
+			(at 218.44 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7171,7 +7193,7 @@
 			)
 		)
 		(property "Height" "2.42"
-			(at 481.28 71.12 0)
+			(at 613.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7183,7 +7205,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 581.28 71.12 0)
+			(at 713.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7195,7 +7217,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "5019"
-			(at 681.28 71.12 0)
+			(at 813.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7207,7 +7229,7 @@
 			)
 		)
 		(property "Mouser Part Number" "534-5019"
-			(at 781.28 71.12 0)
+			(at 913.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7219,7 +7241,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
-			(at 881.28 71.12 0)
+			(at 1013.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7231,7 +7253,7 @@
 			)
 		)
 		(property "Arrow Part Number" "5019"
-			(at 981.28 71.12 0)
+			(at 1113.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7243,7 +7265,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
-			(at 1081.28 71.12 0)
+			(at 1213.36 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7268,7 +7290,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 119.38 87.63 0)
+		(at 251.46 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7279,7 +7301,7 @@
 		(fields_autoplaced yes)
 		(uuid "56858699-c114-4db3-9273-29d3cc28e167")
 		(property "Reference" "#PWR017"
-			(at 119.38 91.44 0)
+			(at 251.46 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7290,7 +7312,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 119.38 82.55 0)
+			(at 251.46 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7300,7 +7322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 87.63 0)
+			(at 251.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7311,7 +7333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 87.63 0)
+			(at 251.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7322,7 +7344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 119.38 87.63 0)
+			(at 251.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7511,7 +7533,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 257.81 109.22 0)
+		(at 257.81 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7522,7 +7544,7 @@
 		(fields_autoplaced yes)
 		(uuid "5da52a73-dc1b-467d-980c-069f371f5415")
 		(property "Reference" "#PWR07"
-			(at 257.81 115.57 0)
+			(at 257.81 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7533,7 +7555,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 257.81 114.3 0)
+			(at 257.81 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7543,7 +7565,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 109.22 0)
+			(at 257.81 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7554,7 +7576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 109.22 0)
+			(at 257.81 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7565,7 +7587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 109.22 0)
+			(at 257.81 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7754,7 +7776,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 63.5 87.63 90)
+		(at 195.58 129.54 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7764,7 +7786,7 @@
 		(dnp no)
 		(uuid "66b57bac-d069-4728-9816-dfbd589fc219")
 		(property "Reference" "C4"
-			(at 63.5 90.932 90)
+			(at 195.58 132.842 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7774,7 +7796,7 @@
 			)
 		)
 		(property "Value" ".1u"
-			(at 63.754 84.328 90)
+			(at 195.834 126.238 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7784,7 +7806,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 67.31 86.6648 0)
+			(at 199.39 128.5748 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7795,7 +7817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 87.63 0)
+			(at 195.58 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7806,7 +7828,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 63.5 87.63 0)
+			(at 195.58 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8002,7 +8024,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 101.6 0)
+		(at 142.24 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8013,7 +8035,7 @@
 		(fields_autoplaced yes)
 		(uuid "683b0609-84d4-4658-a090-cc3c02885ac2")
 		(property "Reference" "#PWR05"
-			(at 142.24 107.95 0)
+			(at 142.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8024,7 +8046,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 142.24 106.68 0)
+			(at 142.24 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8034,7 +8056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 101.6 0)
+			(at 142.24 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8045,7 +8067,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 101.6 0)
+			(at 142.24 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8056,7 +8078,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 101.6 0)
+			(at 142.24 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8329,7 +8351,7 @@
 	)
 	(symbol
 		(lib_id "5019:5019")
-		(at 245.11 109.22 180)
+		(at 245.11 76.2 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8340,7 +8362,7 @@
 		(fields_autoplaced yes)
 		(uuid "83646eae-2fdc-44ae-8c07-99ecf8f78444")
 		(property "Reference" "TP4"
-			(at 234.95 101.6 0)
+			(at 234.95 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8350,7 +8372,7 @@
 			)
 		)
 		(property "Value" "5019"
-			(at 234.95 104.14 0)
+			(at 234.95 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8360,7 +8382,7 @@
 			)
 		)
 		(property "Footprint" "5019:5019"
-			(at 228.6 14.3 0)
+			(at 228.6 -18.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8372,7 +8394,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
-			(at 228.6 -85.7 0)
+			(at 228.6 -118.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8384,7 +8406,7 @@
 			)
 		)
 		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
-			(at 245.11 109.22 0)
+			(at 245.11 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8395,7 +8417,7 @@
 			)
 		)
 		(property "Height" "2.42"
-			(at 228.6 -285.7 0)
+			(at 228.6 -318.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8407,7 +8429,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 228.6 -385.7 0)
+			(at 228.6 -418.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8419,7 +8441,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "5019"
-			(at 228.6 -485.7 0)
+			(at 228.6 -518.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8431,7 +8453,7 @@
 			)
 		)
 		(property "Mouser Part Number" "534-5019"
-			(at 228.6 -585.7 0)
+			(at 228.6 -618.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8443,7 +8465,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
-			(at 228.6 -685.7 0)
+			(at 228.6 -718.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8455,7 +8477,7 @@
 			)
 		)
 		(property "Arrow Part Number" "5019"
-			(at 228.6 -785.7 0)
+			(at 228.6 -818.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8467,7 +8489,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
-			(at 228.6 -885.7 0)
+			(at 228.6 -918.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8658,7 +8680,7 @@
 	)
 	(symbol
 		(lib_id "2026-07-13_06-36-12:SRR1260-150M")
-		(at 102.87 87.63 0)
+		(at 234.95 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8668,7 +8690,7 @@
 		(dnp no)
 		(uuid "930fad83-ec77-441c-9797-080f3a3b1c9c")
 		(property "Reference" "L1"
-			(at 110.49 80.01 0)
+			(at 242.57 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8678,7 +8700,7 @@
 			)
 		)
 		(property "Value" "SRR1260-150M"
-			(at 108.458 82.55 0)
+			(at 240.538 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8688,7 +8710,7 @@
 			)
 		)
 		(property "Footprint" "IND_BOURNS_SRR1260"
-			(at 102.87 87.63 0)
+			(at 234.95 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8700,7 +8722,7 @@
 			)
 		)
 		(property "Datasheet" "SRR1260-150M"
-			(at 102.87 87.63 0)
+			(at 234.95 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8712,7 +8734,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 87.63 0)
+			(at 234.95 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8739,7 +8761,7 @@
 	)
 	(symbol
 		(lib_id "5019:5019")
-		(at 129.54 96.52 90)
+		(at 261.62 138.43 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8750,7 +8772,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d125cc2-4571-4aa7-962f-97dfc4815700")
 		(property "Reference" "TP10"
-			(at 133.35 85.0899 90)
+			(at 265.43 126.9999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8761,7 +8783,7 @@
 			)
 		)
 		(property "Value" "5019"
-			(at 133.35 87.6299 90)
+			(at 265.43 129.5399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8772,7 +8794,7 @@
 			)
 		)
 		(property "Footprint" "5019:5019"
-			(at 224.46 80.01 0)
+			(at 356.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8784,7 +8806,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
-			(at 324.46 80.01 0)
+			(at 456.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8796,7 +8818,7 @@
 			)
 		)
 		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
-			(at 129.54 96.52 0)
+			(at 261.62 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8807,7 +8829,7 @@
 			)
 		)
 		(property "Height" "2.42"
-			(at 524.46 80.01 0)
+			(at 656.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8819,7 +8841,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 624.46 80.01 0)
+			(at 756.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8831,7 +8853,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "5019"
-			(at 724.46 80.01 0)
+			(at 856.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8843,7 +8865,7 @@
 			)
 		)
 		(property "Mouser Part Number" "534-5019"
-			(at 824.46 80.01 0)
+			(at 956.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8855,7 +8877,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
-			(at 924.46 80.01 0)
+			(at 1056.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8867,7 +8889,7 @@
 			)
 		)
 		(property "Arrow Part Number" "5019"
-			(at 1024.46 80.01 0)
+			(at 1156.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8879,7 +8901,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
-			(at 1124.46 80.01 0)
+			(at 1256.54 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9486,7 +9508,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 129.54 102.87 0)
+		(at 261.62 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9496,7 +9518,7 @@
 		(dnp no)
 		(uuid "b7e2486c-d481-40ae-888f-62aa032cb343")
 		(property "Reference" "C8"
-			(at 133.604 102.362 0)
+			(at 265.684 144.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9507,7 +9529,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 133.35 104.1399 0)
+			(at 265.43 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9518,7 +9540,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 130.5052 106.68 0)
+			(at 262.5852 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9529,7 +9551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 102.87 0)
+			(at 261.62 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9540,7 +9562,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 129.54 102.87 0)
+			(at 261.62 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9567,7 +9589,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 88.9 110.49 0)
+		(at 220.98 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9577,7 +9599,7 @@
 		(dnp no)
 		(uuid "b8747516-ded2-4ad4-a765-28df8c77daf8")
 		(property "Reference" "C5"
-			(at 94.234 110.998 90)
+			(at 226.314 152.908 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9587,7 +9609,7 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 92.202 110.744 90)
+			(at 224.282 152.654 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9597,7 +9619,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 89.8652 114.3 0)
+			(at 221.9452 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9608,7 +9630,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 110.49 0)
+			(at 220.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9619,7 +9641,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 88.9 110.49 0)
+			(at 220.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9646,7 +9668,7 @@
 	)
 	(symbol
 		(lib_id "2026-07-11_06-22-39:PLMR54410DBVR")
-		(at 43.18 102.87 0)
+		(at 175.26 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9657,7 +9679,7 @@
 		(fields_autoplaced yes)
 		(uuid "be1b3342-deae-46fc-a1fc-4a0a9e32079b")
 		(property "Reference" "U1"
-			(at 63.5 92.71 0)
+			(at 195.58 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9667,7 +9689,7 @@
 			)
 		)
 		(property "Value" "PLMR54410DBVR"
-			(at 63.5 95.25 0)
+			(at 195.58 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9677,7 +9699,7 @@
 			)
 		)
 		(property "Footprint" "U_SOT-23_TEX"
-			(at 43.18 102.87 0)
+			(at 175.26 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9689,7 +9711,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/lmr54410"
-			(at 43.18 102.87 0)
+			(at 175.26 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9701,7 +9723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 102.87 0)
+			(at 175.26 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10393,7 +10415,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 107.95 0)
+		(at 251.46 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10404,7 +10426,7 @@
 		(fields_autoplaced yes)
 		(uuid "d69e1e44-b133-4aba-8dac-991d017eceec")
 		(property "Reference" "R5"
-			(at 121.92 106.6799 0)
+			(at 254 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10415,7 +10437,7 @@
 			)
 		)
 		(property "Value" "22.1k"
-			(at 121.92 109.2199 0)
+			(at 254 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10426,7 +10448,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
-			(at 117.602 107.95 90)
+			(at 249.682 149.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10437,7 +10459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 107.95 0)
+			(at 251.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10448,7 +10470,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 119.38 107.95 0)
+			(at 251.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11124,7 +11146,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 113.03 0)
+		(at 261.62 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11135,7 +11157,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8ca75de-cbec-4763-82b5-12eb1bd264dc")
 		(property "Reference" "#PWR018"
-			(at 129.54 119.38 0)
+			(at 261.62 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11146,7 +11168,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 118.11 0)
+			(at 261.62 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11156,7 +11178,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 113.03 0)
+			(at 261.62 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11167,7 +11189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 113.03 0)
+			(at 261.62 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11178,7 +11200,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 113.03 0)
+			(at 261.62 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11744,7 +11766,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 113.03 0)
+		(at 92.71 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11755,7 +11777,7 @@
 		(fields_autoplaced yes)
 		(uuid "f04288bb-c16c-4406-a976-72adf5f5cee6")
 		(property "Reference" "#PWR019"
-			(at 25.4 119.38 0)
+			(at 92.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11766,7 +11788,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 118.11 0)
+			(at 92.71 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11776,7 +11798,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 113.03 0)
+			(at 92.71 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11787,7 +11809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 113.03 0)
+			(at 92.71 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11798,7 +11820,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 113.03 0)
+			(at 92.71 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CME0303S3C'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "CME0303S3C" (!) = "", "CME0303S3C", "Other", "580-CME0303S3C", "https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/CME0303S3C?qs=XKx0tEJeiQ3UXTrSkJqzTw%3D%3D", "CME0303S3C", "https://www.arrow.com/en/products/cme0303s3c/murata-power-solutions?region=nac", "Murata Power Solutions CME 0.75W Isolated DC-DC Converter Through Hole, Vin 2.97  3.63 V dc, Vout 3.3V dc", "https://www.murata.com/products/productdata/8807029342238/kdc-cme.pdf?1614569448000", "7.71 mm"
+END_PART
+
+END.

@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "CME0303S3C"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "CME0303S3C")
+        (spec "default")
+    )
+)

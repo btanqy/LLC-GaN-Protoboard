@@ -1,0 +1,146 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "AMC1200SDUBR"
+   (description "Isolation Amplifiers 4kV peak Iso Amp")
+   (family "ANA")
+   (package "SOP254P1040X485-8N")
+   (attribute "Datasheet Link" "https://www.ti.com/lit/gpn/AMC1200")
+   (attribute "Geometry.Height" "4.85mm")
+   (attribute "Manufacturer_Name" "Texas Instruments")
+   (attribute "Manufacturer_Part_Number" "AMC1200SDUBR")
+   (attribute "Mouser Part Number" "595-AMC1200SDUBR")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/AMC1200SDUBR?qs=Nxfnlnd%252BiAcMKGpoVxsKlg%3D%3D")
+   (attribute "Arrow Part Number" "AMC1200SDUBR")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/amc1200sdubr/texas-instruments.html?utm_currency=USD&region=nac")
+   (gate
+    (symbol "AMC1200SDUBR")
+    (pin "VDD1" 1 PS)
+    (pin "VINP" 2 PS)
+    (pin "VINN" 3 PS)
+    (pin "GND1" 4 PS)
+    (pin "VDD2" 8 PS)
+    (pin "VOUTP" 7 PS)
+    (pin "VOUTN" 6 PS)
+    (pin "GND2" 5 PS)
+   )
+  )
+  (symbol "AMC1200SDUBR"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOP254P1040X485-8N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.95 5.025)
+      (pt 5.95 5.025)
+      (pt 5.95 -5.025)
+      (pt -5.95 -5.025)
+      (pt -5.95 5.025))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.31 4.642)
+      (pt 3.31 4.642)
+      (pt 3.31 -4.642)
+      (pt -3.31 -4.642)
+      (pt -3.31 4.642))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.31 2.102)
+      (pt -0.77 4.642))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3 4.642)
+      (pt 3 4.642)
+      (pt 3 -4.642)
+      (pt -3 -4.642)
+      (pt -3 4.642))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5.7 4.51)
+      (pt -3.35 4.51))))
+   (leg 1 (pt -4.525 3.81) (padstack 0))
+   (leg 2 (pt -4.525 1.27) (padstack 0))
+   (leg 3 (pt -4.525 -1.27) (padstack 0))
+   (leg 4 (pt -4.525 -3.81) (padstack 0))
+   (leg 5 (pt 4.525 -3.81) (padstack 0))
+   (leg 6 (pt 4.525 -1.27) (padstack 0))
+   (leg 7 (pt 4.525 1.27) (padstack 0))
+   (leg 8 (pt 4.525 3.81) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 2.35 0 0 0))
+   )
+   (model "AMC1200SDUBR.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

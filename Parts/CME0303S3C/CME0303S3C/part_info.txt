@@ -1,0 +1,9 @@
+Manufacturer=Murata Electronics
+PartNumber=CME0303S3C
+PartCategory=Power Supply
+PackageCategory=Other
+PinCount=4
+Version=2.3
+Released=2018-07-19 12:50:39
+Downloaded=2026-07-30 12:15:51
+3D=Y

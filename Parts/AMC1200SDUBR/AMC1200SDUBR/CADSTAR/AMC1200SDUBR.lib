@@ -1,0 +1,18 @@
+.AMC1200SDUBR :1 ;Isolation Amplifiers 4kV peak Iso Amp
+SOP254P1040X485-8N
+*STM IC
+*NGS
+*PLB 1="VDD1" 2="VINP" 3="VINN" 4="GND1" 5="GND2" 6="VOUTN" 7="VOUTP" 8="VDD2"
+*MXP 8
+*DFN AMC1200SDUBR
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (AMC1200SDUBR)
+~!Mouser Part Number (595-AMC1200SDUBR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/AMC1200SDUBR?qs=Nxfnlnd%252BiAcMKGpoVxsKlg%3D%3D)
+~!Arrow Part Number (AMC1200SDUBR)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/amc1200sdubr/texas-instruments.html?utm_currency=USD&region=nac)
+~!Link Datasheet (https://www.ti.com/lit/gpn/AMC1200)
+~!Height (4.85mm)
+~!3D_Model (AMC1200SDUBR)
+AMC1200SDUBR
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

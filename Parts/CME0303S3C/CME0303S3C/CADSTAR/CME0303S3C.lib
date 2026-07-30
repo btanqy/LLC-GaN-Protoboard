@@ -1,0 +1,18 @@
+.CME0303S3C :1 ;Murata Power Solutions CME 0.75W Isolated DC-DC Converter Through Hole, Vin 2.97  3.63 V dc, Vout 3.3V dc
+CME0303S3C
+*STM PS
+*NGS
+*PLB 1="-VIN" 2="+VIN" 3="-VOUT" 4="+VOUT"
+*MXP 4
+*DFN CME0303S3C
+~!Manufacturer_Name (Murata Electronics)
+~!Manufacturer_Part_Number (CME0303S3C)
+~!Mouser Part Number (580-CME0303S3C)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/CME0303S3C?qs=XKx0tEJeiQ3UXTrSkJqzTw%3D%3D)
+~!Arrow Part Number (CME0303S3C)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/cme0303s3c/murata-power-solutions?region=nac)
+~!Link Datasheet (https://www.murata.com/products/productdata/8807029342238/kdc-cme.pdf?1614569448000)
+~!Height (7.71mm)
+~!3D_Model (CME0303S3C)
+CME0303S3C
+1.1!U 2.1!U 3.1!U 4.1!U 

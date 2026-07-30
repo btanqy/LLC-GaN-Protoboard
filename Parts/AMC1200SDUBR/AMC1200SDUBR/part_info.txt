@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=AMC1200SDUBR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2020-09-03 11:31:57
+Downloaded=2026-07-30 12:00:51
+3D=Y

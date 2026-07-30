@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMC1200SDUBR
+D Isolation Amplifiers 4kV peak Iso Amp
+K
+F https://www.ti.com/lit/gpn/AMC1200
+$ENDCMP
+#
+#End Doc Library

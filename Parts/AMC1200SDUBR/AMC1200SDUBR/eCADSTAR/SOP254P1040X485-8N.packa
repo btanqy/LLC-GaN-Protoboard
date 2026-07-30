@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "AMC1200SDUBR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-07-07-06:45:46)
+    (mountForm default
+        (footprintRef "SOP254P1040X485-8N")
+        (spec "System")
+    )
+)

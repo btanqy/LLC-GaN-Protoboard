@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CME0303S3C"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-06-09-06:11:23)
+    (mountForm default
+        (footprintRef "CME0303S3C")
+        (spec "System")
+    )
+)

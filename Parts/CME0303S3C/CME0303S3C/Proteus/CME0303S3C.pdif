@@ -1,0 +1,128 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "CME0303S3C"
+   (description "Murata Power Solutions CME 0.75W Isolated DC-DC Converter Through Hole, Vin 2.97  3.63 V dc, Vout 3.3V dc")
+   (family "ANA")
+   (package "CME0303S3C")
+   (attribute "Datasheet Link" "https://www.murata.com/products/productdata/8807029342238/kdc-cme.pdf?1614569448000")
+   (attribute "Geometry.Height" "7.71mm")
+   (attribute "Manufacturer_Name" "Murata Electronics")
+   (attribute "Manufacturer_Part_Number" "CME0303S3C")
+   (attribute "Mouser Part Number" "580-CME0303S3C")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/CME0303S3C?qs=XKx0tEJeiQ3UXTrSkJqzTw%3D%3D")
+   (attribute "Arrow Part Number" "CME0303S3C")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/cme0303s3c/murata-power-solutions?region=nac")
+   (gate
+    (symbol "CME0303S3C")
+    (pin "-VIN" 1 PS)
+    (pin "+VIN" 2 PS)
+    (pin "-VOUT" 3 PS)
+    (pin "+VOUT" 4 PS)
+   )
+  )
+  (symbol "CME0303S3C"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "CME0303S3C"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.95 4.97)
+      (pt 9.58 4.97)
+      (pt 9.58 -1.13)
+      (pt -1.95 -1.13)
+      (pt -1.95 4.97))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.95 4.97)
+      (pt 9.58 4.97)
+      (pt 9.58 -1.13)
+      (pt -1.95 -1.13)
+      (pt -1.95 4.97))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.95 5.97)
+      (pt 10.58 5.97)
+      (pt 10.58 -2.13)
+      (pt -2.95 -2.13)
+      (pt -2.95 5.97))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 0 -1.75)
+      (arc (pt 0.000 -1.750) (pt -0.050 -1.750) (pt 0.050 -1.650) (start 180.0) (sweep -90.0))
+      (pt 0 -1.65)
+      (arc (pt 0.000 -1.650) (pt -0.050 -1.750) (pt 0.050 -1.650) (start 180.0) (sweep 90.0))
+      (pt 0 -1.75))))
+   (leg 1 (pt 0.000 0.000) (padstack 1))
+   (leg 2 (pt 2.540 0.000) (padstack 0))
+   (leg 3 (pt 5.080 0.000) (padstack 0))
+   (leg 4 (pt 7.620 0.000) (padstack 0))
+   (padstack 0
+    (hole 1.075)
+    (plated true)
+    (pad (layer TCOP) (round 1.612))
+    (pad (layer INNER) (round 1.612))
+    (pad (layer BCOP) (round 1.612))
+   )
+   (padstack 1
+    (hole 1.075)
+    (plated true)
+    (pad (layer TCOP) (square 1.612))
+    (pad (layer INNER) (round 1.612))
+    (pad (layer BCOP) (square 1.612))
+   )
+   (model "CME0303S3C.stp"
+    (euler 90 0 0)
+    (offset -0.05999999865889549 -0.009999999776482582 -4.010000228881836)
+   )
+  )
+ )
+)

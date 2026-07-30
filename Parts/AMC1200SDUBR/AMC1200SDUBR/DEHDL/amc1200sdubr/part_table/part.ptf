@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AMC1200SDUBR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "AMC1200SDUBR" (!) = "", "SOP254P1040X485-8N", "Small Outline Packages", "595-AMC1200SDUBR", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/AMC1200SDUBR?qs=Nxfnlnd%252BiAcMKGpoVxsKlg%3D%3D", "AMC1200SDUBR", "https://www.arrow.com/en/products/amc1200sdubr/texas-instruments.html?utm_currency=USD&region=nac", "Isolation Amplifiers 4kV peak Iso Amp", "https://www.ti.com/lit/gpn/AMC1200", "4.85 mm"
+END_PART
+
+END.
