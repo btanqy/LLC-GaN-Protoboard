@@ -3657,7 +3657,7 @@
 	)
 	(text "transformer\n"
 		(exclude_from_sim no)
-		(at 233.934 95.758 0)
+		(at 235.458 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3674,6 +3674,12 @@
 			)
 		)
 		(uuid "e1f73ad4-1a7b-4aca-b595-a07febed6fc2")
+	)
+	(junction
+		(at 218.44 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09fc81c7-e950-4961-aadf-d975c8537624")
 	)
 	(junction
 		(at 153.67 77.47)
@@ -3800,6 +3806,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0e82b6e-8584-457d-a352-7dc4e18976a6")
+	)
+	(junction
+		(at 194.31 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a995e9e4-2b14-4da6-97c9-b836f91ae20d")
+	)
+	(junction
+		(at 142.24 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be9fcbd0-fa24-4d8f-b1d1-8bd22679bcef")
 	)
 	(junction
 		(at 261.62 153.67)
@@ -4027,7 +4045,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 39.37) (xy 242.57 39.37)
+			(xy 214.63 39.37) (xy 218.44 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4307,6 +4325,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 39.37) (xy 242.57 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79b3108d-0355-4c2d-b90d-32fa59740260")
+	)
+	(wire
+		(pts
 			(xy 176.53 44.45) (xy 176.53 39.37)
 		)
 		(stroke
@@ -4424,6 +4452,16 @@
 			(type default)
 		)
 		(uuid "9587e656-484f-49d7-a001-4426b6f94fa5")
+	)
+	(wire
+		(pts
+			(xy 194.31 39.37) (xy 196.85 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973877de-4f4f-4a06-9e9d-8f0e7511ac43")
 	)
 	(wire
 		(pts
@@ -4557,7 +4595,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 39.37) (xy 196.85 39.37)
+			(xy 179.07 39.37) (xy 194.31 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5573,6 +5611,169 @@
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "5019:5019")
+		(at 142.24 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a587963-f159-481a-b839-a6e5ab6bfb57")
+		(property "Reference" "TP17"
+			(at 132.08 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5019"
+			(at 132.08 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "5019:5019"
+			(at 125.73 -17.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
+			(at 125.73 -117.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
+			(at 142.24 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "2.42"
+			(at 125.73 -317.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Keystone Electronics"
+			(at 125.73 -417.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "5019"
+			(at 125.73 -517.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "534-5019"
+			(at 125.73 -617.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
+			(at 125.73 -717.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "5019"
+			(at 125.73 -817.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
+			(at 125.73 -917.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "cf5ff076-5d53-405e-8849-623225d223ca")
+		)
+		(instances
+			(project "LLC GaN Protoboard"
+				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -8673,6 +8874,171 @@
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "5019:5019")
+		(at 218.44 39.37 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b05e743-da81-4977-ab5d-fab22e34be94")
+		(property "Reference" "TP16"
+			(at 222.25 48.2599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5019"
+			(at 222.25 50.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "5019:5019"
+			(at 123.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
+			(at 23.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
+			(at 218.44 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "2.42"
+			(at -176.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Keystone Electronics"
+			(at -276.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "5019"
+			(at -376.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "534-5019"
+			(at -476.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
+			(at -576.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "5019"
+			(at -676.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
+			(at -776.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "dce9b9dd-84f9-4167-851f-79fafe6e6b38")
+		)
+		(instances
+			(project "LLC GaN Protoboard"
+				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -11837,6 +12203,171 @@
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "5019:5019")
+		(at 194.31 39.37 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48e96e2-b98f-458a-8345-d2c4dd5dac48")
+		(property "Reference" "TP15"
+			(at 198.12 48.2599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5019"
+			(at 198.12 50.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "5019:5019"
+			(at 99.39 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1357"
+			(at -0.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Circuit Board Hardware - PCB TEST POINT"
+			(at 194.31 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "2.42"
+			(at -200.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Keystone Electronics"
+			(at -300.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "5019"
+			(at -400.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "534-5019"
+			(at -500.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D"
+			(at -600.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "5019"
+			(at -700.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5019/keystone-electronics.html?utm_currency=USD&region=europe"
+			(at -800.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "8db929e9-98f2-43c0-aae3-00844d81cde8")
+		)
+		(instances
+			(project "LLC GaN Protoboard"
+				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
