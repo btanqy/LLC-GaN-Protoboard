@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SRR1260-150M"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SRR1260-150M")
+        (spec "default")
+    )
+)

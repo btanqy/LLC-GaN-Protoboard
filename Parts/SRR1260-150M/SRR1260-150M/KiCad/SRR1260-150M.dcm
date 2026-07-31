@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRR1260-150M
+D Power inductor SMD shielded 15uH 5A Bourns SRR1260 Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 15 uH +/-20% 5A Idc Q:25
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-7/sf-000140468.pdf
+$ENDCMP
+#
+#End Doc Library

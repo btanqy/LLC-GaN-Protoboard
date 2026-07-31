@@ -16,4 +16,5 @@
 	(lib (name "LM124DR") (type "KiCad") (uri "${KIPRJMOD}/../Parts/LM124DR/LM124DR.kicad_sym") (options "") (descr ""))
 	(lib (name "AMC1200SDUBR") (type "KiCad") (uri "${KIPRJMOD}/../Parts/AMC1200SDUBR/AMC1200SDUBR/KiCad/AMC1200SDUBR.kicad_sym") (options "") (descr ""))
 	(lib (name "CME0303S3C") (type "KiCad") (uri "${KIPRJMOD}/../Parts/CME0303S3C/CME0303S3C/KiCad/CME0303S3C.kicad_sym") (options "") (descr ""))
+	(lib (name "SRR1260-150M") (type "KiCad") (uri "${KIPRJMOD}/../Parts/SRR1260-150M/SRR1260-150M/KiCad/SRR1260-150M.kicad_sym") (options "") (descr ""))
 )

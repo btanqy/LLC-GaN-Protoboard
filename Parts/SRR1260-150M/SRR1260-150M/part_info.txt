@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=SRR1260-150M
+PartCategory=Inductor
+PackageCategory=Other
+PinCount=2
+Version=1.3
+Released=2016-11-06 19:51:56
+Downloaded=2026-07-31 09:07:40
+3D=Y

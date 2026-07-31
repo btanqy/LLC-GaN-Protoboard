@@ -1,0 +1,18 @@
+.SRR1260-150M :1 ;Power inductor SMD shielded 15uH 5A Bourns SRR1260 Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 15 uH +/-20% 5A Idc Q:25
+SRR1260-150M
+*STM L
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN SRR1260-150M
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (SRR1260-150M)
+~!Mouser Part Number (652-SRR1260-150M)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/SRR1260-150M?qs=y9m3SKnhpLPF5BoYDkDwgQ%3D%3D)
+~!Arrow Part Number (SRR1260-150M)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/srr1260-150m/bourns.html?utm_currency=USD&region=nac)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-7/sf-000140468.pdf)
+~!Height (-)
+~!3D_Model (SRR1260-150M)
+SRR1260-150M
+1.1!U 2.1!U 
