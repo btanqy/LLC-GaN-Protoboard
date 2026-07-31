@@ -16,3 +16,4 @@
 
 2/20 turn transformer
 ferrite core needs a 60um gap (1.08uh magnetizing inductance)
+10 turns, 6.25 starting radius, 0.254 width, 0.4 spacing
