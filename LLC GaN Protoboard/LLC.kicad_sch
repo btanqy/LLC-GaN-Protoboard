@@ -3913,16 +3913,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 86.36) (xy 102.87 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b5e3dde-c0be-419e-ba5f-ecb2e0b72b3d")
-	)
-	(wire
-		(pts
 			(xy 72.39 54.61) (xy 78.74 54.61)
 		)
 		(stroke
@@ -4070,6 +4060,16 @@
 			(type default)
 		)
 		(uuid "33a59678-2b4d-4b02-a14c-464e2202d3f6")
+	)
+	(wire
+		(pts
+			(xy 109.22 46.99) (xy 106.68 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33fafbb1-2a4b-4952-a6fa-c2e79e80fc26")
 	)
 	(wire
 		(pts
@@ -4253,16 +4253,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 86.36) (xy 93.98 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "618ec468-2a7a-4fb8-9548-5e29632073b2")
-	)
-	(wire
-		(pts
 			(xy 86.36 138.43) (xy 86.36 156.21)
 		)
 		(stroke
@@ -4340,6 +4330,16 @@
 			(type default)
 		)
 		(uuid "7ea15ae3-fb7d-4921-a7db-c4fabfcb97b7")
+	)
+	(wire
+		(pts
+			(xy 92.71 86.36) (xy 102.87 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f5cdffe-cd65-4c34-b349-0292c31e9445")
 	)
 	(wire
 		(pts
@@ -4520,6 +4520,16 @@
 			(type default)
 		)
 		(uuid "cdce1e45-811f-41ed-a48d-211ddaf6b47d")
+	)
+	(wire
+		(pts
+			(xy 109.22 41.91) (xy 106.68 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1cae36c-2c39-4e2d-9e19-e336700252b8")
 	)
 	(wire
 		(pts
@@ -4753,7 +4763,7 @@
 	)
 	(hierarchical_label "HIN"
 		(shape input)
-		(at 106.68 46.99 0)
+		(at 109.22 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4775,7 +4785,7 @@
 	)
 	(hierarchical_label "LIN"
 		(shape input)
-		(at 106.68 41.91 0)
+		(at 109.22 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5338,86 +5348,6 @@
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 97.79 86.36 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f9ed333-d0b2-4a41-8fcb-43f47f6c66b6")
-		(property "Reference" "R6"
-			(at 97.79 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 97.79 82.55 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 97.79 88.138 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 97.79 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f86cb43-3575-4753-a552-d8f2ea52b443")
-		)
-		(pin "2"
-			(uuid "897f76b8-b260-497d-b1c6-302666521229")
-		)
-		(instances
-			(project "LLC GaN Protoboard"
-				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
-					(reference "R6")
 					(unit 1)
 				)
 			)

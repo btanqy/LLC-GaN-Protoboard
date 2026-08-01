@@ -161,16 +161,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 78.74) (xy 185.42 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77880050-f111-4c30-9485-47b15a5bb9f1")
-	)
-	(wire
-		(pts
 			(xy 156.21 127) (xy 130.81 127)
 		)
 		(stroke
@@ -181,7 +171,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 74.93) (xy 185.42 74.93)
+			(xy 115.5699 73.66) (xy 185.42 73.66)
 		)
 		(stroke
 			(width 0)
@@ -328,6 +318,16 @@
 			(type default)
 		)
 		(uuid "e59fcc39-85f9-4d8c-882f-e3b26e57bd66")
+	)
+	(wire
+		(pts
+			(xy 115.5699 77.47) (xy 185.42 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea4cb280-6a4c-47e2-95fa-6871ce681f69")
 	)
 	(wire
 		(pts
@@ -594,7 +594,7 @@
 			)
 		)
 		(pin "PWM7A{slash}HI" input
-			(at 115.5699 74.93 0)
+			(at 115.5699 73.66 0)
 			(uuid "ee9f1c9c-50bd-4908-a8b0-4db180179e4a")
 			(effects
 				(font
@@ -604,7 +604,7 @@
 			)
 		)
 		(pin "PWM7B{slash}LO" input
-			(at 115.5699 78.74 0)
+			(at 115.5699 77.47 0)
 			(uuid "e8c1b604-dc50-466d-8aca-a174aa0fd743")
 			(effects
 				(font
@@ -660,7 +660,7 @@
 			)
 		)
 		(pin "HIN" input
-			(at 185.42 74.93 180)
+			(at 185.42 73.66 180)
 			(uuid "18105c2c-272b-4914-a92a-ef6b55bb5ca8")
 			(effects
 				(font
@@ -670,7 +670,7 @@
 			)
 		)
 		(pin "LIN" input
-			(at 185.42 78.74 180)
+			(at 185.42 77.47 180)
 			(uuid "cebd63ab-b03e-4920-8367-6b4a245098aa")
 			(effects
 				(font
