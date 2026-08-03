@@ -3700,12 +3700,6 @@
 		(uuid "21b73b09-04d4-4f93-8e38-666aa9708f72")
 	)
 	(junction
-		(at 142.24 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25b3975e-39ea-4d3a-8952-e746cf29a054")
-	)
-	(junction
 		(at 251.46 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3722,6 +3716,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "460ac522-52ce-421a-bf95-add1292e6395")
+	)
+	(junction
+		(at 111.76 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5112d2de-1f5f-4c96-9a9f-b50b4258f022")
 	)
 	(junction
 		(at 218.44 129.54)
@@ -3746,6 +3746,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ac35609-4811-4dbb-9560-4de7159330f3")
+	)
+	(junction
+		(at 142.24 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b10546c-b15c-4d65-8354-26c58881785c")
 	)
 	(junction
 		(at 176.53 39.37)
@@ -4463,6 +4469,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 49.53) (xy 115.57 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a83c03-09c1-4cb2-b422-549e505e6aeb")
+	)
+	(wire
+		(pts
 			(xy 179.07 39.37) (xy 179.07 53.34)
 		)
 		(stroke
@@ -4473,7 +4489,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 49.53) (xy 115.57 49.53)
+			(xy 106.68 49.53) (xy 111.76 49.53)
 		)
 		(stroke
 			(width 0)
@@ -7869,6 +7885,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 111.76 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "618c39f7-7c64-4458-b069-c492301dcd37")
+		(property "Reference" "#PWR046"
+			(at 111.76 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54c5dca1-ef45-4f78-b9d8-09d1f71344da")
+		)
+		(instances
+			(project "LLC GaN Protoboard"
+				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "5019:5019")
 		(at 138.43 53.34 270)
 		(unit 1)
@@ -10170,6 +10264,88 @@
 			(project "LLC GaN Protoboard"
 				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7237897-b20c-45ec-aea1-fac6aa7e0ea2")
+		(property "Reference" "C11"
+			(at 115.57 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 115.57 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 112.7252 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b2f89d1-6c9f-418b-932a-32af304733bb")
+		)
+		(pin "2"
+			(uuid "0467dc1b-0095-436d-afe6-e6cc51856220")
+		)
+		(instances
+			(project "LLC GaN Protoboard"
+				(path "/07813ae8-ed9f-4173-b5dd-dce781eafd3c/af6a3929-d855-42a5-9472-0d99d4fa635d"
+					(reference "C11")
 					(unit 1)
 				)
 			)
