@@ -31,8 +31,8 @@ while (mem32[CS] & (1 << 31)) == 0: # wait for lock
 # setting the pwm
 mem32[CH0_CSR] = 0b00001011
 mem32[CH0_DIV] = 1 << 4 # divide pll to 200MHz resolution
-mem32[CH0_CC] = ((50 + 4) << 16) | (50 - 4)  # 50% duty with 10ns deadtime = dead/(2*div*fclk)
-mem32[CH0_TOP] = 100  # top = clock/(2*div*frequency)
+mem32[CH0_CC] = ((125 - 2) << 16) | (125 + 2)  # 50% duty with 50ns deadtime = dead/(2*div*fclk)
+mem32[CH0_TOP] = 250  # top = clock/(2*frequency)
 
 while True:
     sleep(2)
@@ -40,7 +40,7 @@ while True:
     mem32[GPIO0_CTRL] = 4
     mem32[GPIO1_CTRL] = 4
     mem32[CH0_CSR] |= 1 << 0
-    sleep(0.01)
+    sleep(0.5)
     # pulse pwm
     mem32[CH0_CSR] &= ~(1 << 0)
     mem32[GPIO0_CTRL] = 5
