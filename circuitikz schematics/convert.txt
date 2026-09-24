@@ -1,0 +1,6 @@
+@echo off
+for %%F in (*.pdf) do (
+    npx pdf-to-png-converter "%%F" --output-folder .
+    del "%%F"
+)
+pause
