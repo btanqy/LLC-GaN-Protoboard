@@ -1,0 +1,98 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.5*%
+%TF.CreationDate,2026-08-07T12:18:06-07:00*%
+%TF.ProjectId,Secondary,5365636f-6e64-4617-9279-2e6b69636164,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Paste,Top*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.5) date 2026-08-07 12:18:06*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 Aperture macros list*
+%AMRoundRect*
+0 Rectangle with rounded corners*
+0 $1 Rounding radius*
+0 $2 $3 $4 $5 $6 $7 $8 $9 X,Y pos of 4 corners*
+0 Add a 4 corners polygon primitive as box body*
+4,1,4,$2,$3,$4,$5,$6,$7,$8,$9,$2,$3,0*
+0 Add four circle primitives for the rounded corners*
+1,1,$1+$1,$2,$3*
+1,1,$1+$1,$4,$5*
+1,1,$1+$1,$6,$7*
+1,1,$1+$1,$8,$9*
+0 Add four rect primitives between the rounded corners*
+20,1,$1+$1,$2,$3,$4,$5,0*
+20,1,$1+$1,$4,$5,$6,$7,0*
+20,1,$1+$1,$6,$7,$8,$9,0*
+20,1,$1+$1,$8,$9,$2,$3,0*%
+G04 Aperture macros list end*
+%ADD10RoundRect,0.250000X-1.075000X0.400000X-1.075000X-0.400000X1.075000X-0.400000X1.075000X0.400000X0*%
+%ADD11R,2.200000X1.350000*%
+%ADD12R,1.350000X2.200000*%
+%ADD13R,3.800000X2.030000*%
+%ADD14R,1.050000X0.600000*%
+%ADD15R,1.400000X3.500000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,R20*%
+X41500000Y-103950000D03*
+X41500000Y-107050000D03*
+%TD*%
+D11*
+%TO.C,D2*%
+X82000000Y-106725000D03*
+X82000000Y-102275000D03*
+%TD*%
+%TO.C,D1*%
+X74000000Y-106725000D03*
+X74000000Y-102275000D03*
+%TD*%
+D12*
+%TO.C,D4*%
+X82275000Y-97000000D03*
+X86725000Y-97000000D03*
+%TD*%
+D13*
+%TO.C,TP7*%
+X87000000Y-128000000D03*
+%TD*%
+D12*
+%TO.C,R2*%
+X53550000Y-127000000D03*
+X58000000Y-127000000D03*
+%TD*%
+D14*
+%TO.C,IC9*%
+X58000000Y-131025000D03*
+X58000000Y-132925000D03*
+X60200000Y-131975000D03*
+%TD*%
+D13*
+%TO.C,TP5*%
+X74500000Y-87500000D03*
+%TD*%
+D12*
+%TO.C,D3*%
+X73725000Y-97000000D03*
+X69275000Y-97000000D03*
+%TD*%
+D13*
+%TO.C,TP8*%
+X65775000Y-128000000D03*
+%TD*%
+%TO.C,TP6*%
+X81500000Y-87500000D03*
+%TD*%
+D15*
+%TO.C,C3*%
+X92950000Y-114500000D03*
+X97050000Y-114500000D03*
+%TD*%
+D13*
+%TO.C,TP22*%
+X50000000Y-106500000D03*
+%TD*%
+M02*
