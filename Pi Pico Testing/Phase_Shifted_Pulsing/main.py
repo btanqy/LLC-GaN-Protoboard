@@ -35,26 +35,29 @@ mem32[PRIM] = (6 << 16) | (1 << 12) # div 6 for 200MHz overclock
 while (mem32[CS] & (1 << 31)) == 0: # wait for lock
     pass
 
+# top = [round(800 + i * 200 / 41) for i in range(42)]
+
+# sleep(10)
 
 #counter values
-top = 600
-half = int(top/2)
+top_value = 530
+half = int(top_value/2)
 # setting the pwm slice 0
 mem32[EN] = 0b00
 mem32[CH0_CSR] = 0b00001001
 mem32[CH0_DIV] = 1 << 4 # divide pll to 200MHz resolution
 mem32[CH0_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
-mem32[CH0_TOP] = top  # top = clock/(2*frequency)
+mem32[CH0_TOP] = top_value  # top = clock/(2*frequency)
 # setting the pwm slice 1
 mem32[CH1_CSR] = 0b00001001
 mem32[CH1_DIV] = 1 << 4 # divide pll to 200MHz resolution
 mem32[CH1_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
-mem32[CH1_TOP] = top  # top = clock/(frequency)
+mem32[CH1_TOP] = top_value  # top = clock/(frequency)
 mem32[CH0_CTR] = 0
 mem32[CH1_CTR] = 0
 
 while True:
-    sleep(2)
+    sleep(5)
     # clock stop
     mem32[EN] = 0b00
     mem32[CH0_CSR] = 0
@@ -70,7 +73,7 @@ while True:
     
     # enable
     mem32[EN] = 0b11
-    sleep(0.003)
+    sleep(0.5)
     
     # off pwm
     mem32[EN] = 0b00
