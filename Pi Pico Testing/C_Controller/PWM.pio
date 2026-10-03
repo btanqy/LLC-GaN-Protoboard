@@ -1,0 +1,7 @@
+.program PWM
+
+.side_set 2 ; max delay at 15 cycles, each cycle is 5ns at 200MHz bandwidth
+
+.define public HI 1
+.define public LO 0
+
