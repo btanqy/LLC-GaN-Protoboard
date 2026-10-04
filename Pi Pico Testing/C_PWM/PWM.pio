@@ -1,0 +1,41 @@
+.program PWM
+
+.side_set 2 opt; max delay at 15 cycles, each cycle is 6ns at 200MHz bandwidth
+
+; pull - 1 cycle
+; mov - 1 cycle
+; out - 1 cycle
+; jmp - 2 cycles to repeat, 1 cycle to pass
+; nop - 1 cycle
+
+; the entire loop has at least 84ns of compute time at 6ns cycles
+
+.define MINDEAD 2
+
+.wrap_target
+
+drivehi:
+    pull noblock
+    mov isr, osr ; copy bit temporarily
+    out x, 24 ; duty cycle
+    out y, 12 ; deadtime
+
+delayhi:
+    jmp x--     delayhi     side 0b10
+
+deadtimehi:
+    jmp y--     deadtimehi  side 0b00
+
+mov osr, isr
+out x, 24
+out y, 12 [3]
+
+delaylo:
+    jmp x--     delaylo     side 0b01   
+
+deadtimelo:
+    jmp y--     deadtimelo  side 0b00   
+
+mov osr, isr
+
+.wrap

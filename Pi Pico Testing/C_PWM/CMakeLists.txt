@@ -23,7 +23,7 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico2 CACHE STRING "Board type")
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -37,6 +37,9 @@ pico_sdk_init()
 
 add_executable(C_PWM C_PWM.c )
 
+pico_generate_pio_header(C_PWM ${CMAKE_CURRENT_LIST_DIR}/PWM.pio)
+
+
 pico_set_program_name(C_PWM "C_PWM")
 pico_set_program_version(C_PWM "0.1")
 
@@ -46,16 +49,22 @@ pico_enable_stdio_usb(C_PWM 0)
 
 # Add the standard library to the build
 target_link_libraries(C_PWM
-        pico_stdlib 
-        hardware_gpio 
-        hardware_pwm
+        pico_stdlib
+        hardware_gpio
         hardware_adc
-        hardware_pll)
+        hardware_clocks
+        hardware_pio)
 
 # Add the standard include files to the build
 target_include_directories(C_PWM PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+# Add any user requested libraries
+target_link_libraries(C_PWM 
+        
+        )
 
 pico_add_extra_outputs(C_PWM)
 

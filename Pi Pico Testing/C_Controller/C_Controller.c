@@ -146,7 +146,7 @@ int main()
         current_time = time_us_64(); // ensure accurate loop time
 
         // Control here
-        vout = adc_to_vout(adc_read());
+        vout = adc_to_vout(adc_read() - vout_offset);
         error = vout_to_freq(vout - VSET);
         freq = freq + (uint)(KP * error * LOOP_DT);
         target_freq = PWM_target_freq(freq, pll_freq, deadtime);
