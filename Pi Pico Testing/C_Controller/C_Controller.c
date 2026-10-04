@@ -5,13 +5,16 @@
 #include "hardware/clocks.h"
 #include "hardware/pio.h"
 #include "PWM.pio.h"
+#include "hardware/pll.h"
 
-// CONTROLLER VALUES
-static uint freq = 300000;
-static float deadtime = 0.01f;
+#pragma region INIT VALUES
 
 // PLL
 static uint32_t pll_freq;
+#define REF_DIV 1
+#define VCO_FREQ 1250000
+#define POST_DIV_1 5
+#define POST_DIV_2 1
 
 // ADC
 #define VOUTSENSE 26
@@ -27,10 +30,24 @@ static uint32_t pinmask = 0b11;
 static uint offset;
 #define BASE 0
 
-// Output
-#define VOUT 200
+// Indicator light
+#define ledpin 25
 
-// PLL setup
+#pragma endregion
+
+// Output and tuning
+static uint freq = 300000; // for initial frequency
+static float deadtime = 0.01f;
+static uint64_t current_time;
+#define VSET 200
+#define KP 1000
+#define DIVIDE_ROUND(a, b) (((a) + ((b) / 2)) / (b))
+#define CONTROLLER_FREQ    30000U
+#define LOOP_DT            DIVIDE_ROUND(1000000U, CONTROLLER_FREQ) // timer counts once per us
+#define ADCPERVOLT 44.63
+#define FREQPERVOLT 5000u
+
+#pragma region DEFS
 
 // PIO setup on pins 0 and 1
 static inline void PWM_setup(PIO pio, uint sm, uint lo, uint hi, uint pindirs, uint32_t mask, uint offset, uint base){
@@ -38,11 +55,11 @@ static inline void PWM_setup(PIO pio, uint sm, uint lo, uint hi, uint pindirs, u
     pio_gpio_init(pio, hi);
     pio_sm_set_pindirs_with_mask(pio, sm, pindirs, mask);
     pio_sm_config c = PWM_program_get_default_config(offset);
-    sm_config_set_sideset_pins(&PWM_program, base);
-    sm_config_set_out_shift(&PWM_program, true, false, 16); // 16 is just pull_threshold
-    sm_config_set_fifo_join(&PWM_program, PIO_FIFO_JOIN_TX);
+    sm_config_set_sideset_pins(&c, base);
+    sm_config_set_out_shift(&c, true, false, 16); // 16 is just pull_threshold
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
 
-    pio_sm_init(pio, sm, offset, &PWM_program);
+    pio_sm_init(pio, sm, offset, &c);
     pio_sm_set_enabled(pio, sm, true);
 }
 
@@ -73,31 +90,71 @@ PWM_cycles PWM_target_freq(uint freq, uint32_t pll_freq, float deadtime){
     return (PWM_cycles){active_cycles, deadtime_cycles};
 }
 
+// Quick conversion methods
+
+static double adc_to_vout(uint adc_values){
+    return adc_values / ADCPERVOLT;
+}
+
+static double vout_to_freq(double vout){
+    return vout * FREQPERVOUT;
+}
+
+#pragma endregion
 
 int main()
 {
+    #pragma region INITS
 
     stdio_init_all();
     adc_init();
 
+    sleep_ms(5000);
+
     // PLL STUFF
+    pll_init (pll_sys, REF_DIV, VCO_FREQ, POST_DIV_1, POST_DIV_1); // oc to 250MHz
     pll_freq = clock_get_hz(clk_sys);
 
     // ADC STUFF
     adc_gpio_init(VOUTSENSE); // Pin 26
     adc_select_input(0); // 0-3 is 26-29 on board
+    // not really sure whether its good to let the adc run or not, but configuring it to not run for now
+    //adc_run(true);
     vout_offset = adc_read();
-    clock_configure(clk_adc, CLK_DEST_SYS_CLOCKS, CLOCKS_CLK_ADC_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, pll_freq, pll_freq);
+    // technically overclocking the adc up to 4MS/s is possible, but keeping it at base frequency means no glitches
+    //clock_configure(clk_adc, CLK_DEST_SYS_CLOCKS, CLOCKS_CLK_ADC_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, pll_freq, pll_freq);
 
     //PWM STUFF
     offset = pio_add_program(PWM, &PWM_program);
-    PWM_setup(PWM, 0, LO, HI, PINDIRS, pinmask, offset, BASE);
-    PWM_cycles pwm_cycles = PWM_target_freq(freq, pll_freq, deadtime);
-    PWM_set_freq(PWM, 0, pwm_cycles.active, pwm_cycles.deadtime);
+    PWM_setup(PWM, SM, LO, HI, PINDIRS, pinmask, offset, BASE);
 
+    // Indicator light
+    gpio_set_function(ledpin, GPIO_FUNC_SIO);
+    gpio_put(ledpin, true);
+
+    #pragma endregion
+
+    // Startup first
+    PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
+    PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
+    sleep_us(100);
+    uint elapsed;
+    double vout;
+    double error;
 
     while (true) {
-        printf("Hello, world!\n");
-        sleep_ms(1000);
+        current_time = time_us_64(); // ensure accurate loop time
+
+        // Control here
+        vout = adc_to_vout(adc_read());
+        error = vout_to_freq(vout - VSET);
+        freq = freq + (uint)(KP * error * LOOP_DT);
+        target_freq = PWM_target_freq(freq, pll_freq, deadtime);
+        PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
+
+        elapsed = time_us_64() - current_time;
+        while (elapsed < LOOP_DT){
+            elapsed = time_us_64() - current_time;
+        }
     }
 }

@@ -1,6 +1,6 @@
 .program PWM
 
-.side_set 2 ; max delay at 15 cycles, each cycle is 6ns at 200MHz bandwidth
+.side_set 2 opt; max delay at 15 cycles, each cycle is 6ns at 200MHz bandwidth
 
 ; pull - 1 cycle
 ; mov - 1 cycle
@@ -21,20 +21,20 @@ drivehi:
     out y, 12 ; deadtime
 
 delayhi:
-    jmp x--     side 0b10   delayhi
+    jmp x--     delayhi     side 0b10
 
 deadtimehi:
-    jmp y--     side 0b00   deadtimehi
+    jmp y--     deadtimehi  side 0b00
 
 mov osr, isr
 out x, 24
 out y, 12 [3]
 
 delaylo:
-    jmp x--     side 0b01   delaylo
+    jmp x--     delaylo     side 0b01   
 
 deadtimelo:
-    jmp y--     side 0b00   deadtimelo
+    jmp y--     deadtimelo  side 0b00   
 
 mov osr, isr
 
