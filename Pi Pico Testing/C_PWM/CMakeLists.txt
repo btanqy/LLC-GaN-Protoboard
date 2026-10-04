@@ -53,7 +53,8 @@ target_link_libraries(C_PWM
         hardware_gpio
         hardware_adc
         hardware_clocks
-        hardware_pio)
+        hardware_pio
+        hardware_vreg)
 
 # Add the standard include files to the build
 target_include_directories(C_PWM PRIVATE

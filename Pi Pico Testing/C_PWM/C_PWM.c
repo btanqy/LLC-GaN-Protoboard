@@ -6,13 +6,14 @@
 #include "hardware/pio.h"
 #include "PWM.pio.h"
 #include "hardware/pll.h"
+#include "hardware/vreg.h"
 
 #pragma region INIT VALUES
 
 // PLL
 static uint32_t pll_freq;
 #define REF_DIV 1
-#define VCO_FREQ 1250000
+#define VCO_FREQ 1250 * MHz
 #define POST_DIV_1 5
 #define POST_DIV_2 1
 
@@ -53,7 +54,7 @@ static uint64_t current_time;
 static inline void PWM_setup(PIO pio, uint sm, uint lo, uint hi, uint pindirs, uint32_t mask, uint offset, uint base){
     pio_gpio_init(pio, lo);
     pio_gpio_init(pio, hi);
-    pio_sm_set_pindirs_with_mask(pio, sm, pindirs, mask);
+    pio_sm_set_consecutive_pindirs(pio, sm, lo, 2, true);
     pio_sm_config c = PWM_program_get_default_config(offset);
     sm_config_set_sideset_pins(&c, base);
     sm_config_set_out_shift(&c, true, false, 16); // 16 is just pull_threshold
@@ -90,13 +91,16 @@ PWM_cycles PWM_target_freq(uint freq, uint32_t pll_freq, float deadtime){
     return (PWM_cycles){active_cycles, deadtime_cycles};
 }
 
-static inline void disable_sm(PIO pio, uint sm, uint pin) {
-    pio_sm_exec(pio, sm, pio_encode_set(pio_pins, 0));
+static inline void disable_sm(PIO pio, uint sm) {
     pio_sm_set_enabled(pio, sm, false);
+    pio_sm_clear_fifos(pio, sm);
+    pio_sm_restart(pio, sm);
+    pio_sm_exec(pio, sm, pio_encode_jmp(offset));
+    pio_sm_set_pins_with_mask(pio, sm, 0, pinmask);
 }
 
 static inline void enable_sm(PIO pio, uint sm){
-    pio_sm_set_enabled(pio, sm true);
+    pio_sm_set_enabled(pio, sm, true);
 }
 
 // Quick conversion methods
@@ -106,7 +110,7 @@ static double adc_to_vout(uint adc_values){
 }
 
 static double vout_to_freq(double vout){
-    return vout * FREQPERVOUT;
+    return vout * FREQPERVOLT;
 }
 
 #pragma endregion
@@ -121,7 +125,7 @@ int main()
     sleep_ms(5000);
 
     // PLL STUFF
-    pll_init (pll_sys, REF_DIV, VCO_FREQ, POST_DIV_1, POST_DIV_1); // oc to 250MHz
+    pll_init (pll_sys, REF_DIV, VCO_FREQ, POST_DIV_1, POST_DIV_2); // oc to 250MHz
     pll_freq = clock_get_hz(clk_sys);
 
     // ADC STUFF
@@ -135,7 +139,7 @@ int main()
 
     //PWM STUFF
     offset = pio_add_program(PWM, &PWM_program);
-    PWM_setup(PWM, SM, LO, HI, PINDIRS, pinmask, offset, BASE);
+    //PWM_setup(PWM, SM, LO, HI, PINDIRS, pinmask, offset, BASE);
 
     // Indicator light
     gpio_set_function(ledpin, GPIO_FUNC_SIO);
@@ -149,7 +153,7 @@ int main()
     double error;
     sleep_ms(10000);
 
-    for (int i = 0; i < 100; i++;){
+    for (int i = 0; i < 100; i++){
         current_time = time_us_64(); // first pulse
 
         PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
@@ -163,7 +167,7 @@ int main()
 
         current_time = time_us_64(); // next pulse
 
-        disable_sm(PIO, SM, 0);
+        disable_sm(PWM, SM);
         freq += 5000;
 
         elapsed = time_us_64() - current_time;
