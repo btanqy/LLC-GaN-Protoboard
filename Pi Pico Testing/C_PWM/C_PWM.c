@@ -13,7 +13,7 @@
 // PLL
 static uint32_t pll_freq;
 #define REF_DIV 1
-#define VCO_FREQ 1250 * MHz
+#define VCO_FREQ 125000000
 #define POST_DIV_1 5
 #define POST_DIV_2 1
 
@@ -31,19 +31,16 @@ static uint32_t pinmask = 0b11;
 static uint offset;
 #define BASE 0
 
-// Indicator light
-#define ledpin 25
-
 #pragma endregion
 
 // Output and tuning
-static uint freq = 300000; // for initial frequency
+static uint freq = 500000; // for initial frequency
 static float deadtime = 0.01f;
 static uint64_t current_time;
 #define VSET 200
 #define KP 1000
 #define DIVIDE_ROUND(a, b) (((a) + ((b) / 2)) / (b))
-#define CONTROLLER_FREQ    1000U
+#define CONTROLLER_FREQ    50000U
 #define LOOP_DT            DIVIDE_ROUND(1000000U, CONTROLLER_FREQ) // timer counts once per us
 #define ADCPERVOLT 44.63
 #define FREQPERVOLT 5000u
@@ -66,7 +63,7 @@ static inline void PWM_setup(PIO pio, uint sm, uint lo, uint hi, uint pindirs, u
 
 static inline void PWM_set_freq(PIO pio, uint sm, uint32_t active_counter, uint32_t deadtime_counter){
     if (!pio_sm_is_tx_fifo_full(pio, sm)){
-        pio_sm_put(pio, sm, (uint32_t)active_counter << 12 | deadtime_counter);
+        pio_sm_put(pio, sm, (deadtime_counter << 20) | (active_counter & 0xFFFFF));
     }
 }
 
@@ -78,18 +75,22 @@ typedef struct{
 PWM_cycles PWM_target_freq(uint freq, uint32_t pll_freq, float deadtime){
     // request some frequency, given pll frequency, and percentage of deadtime (0.01 = 1% deadtime)
     // minimum of 12 cycles, and an additional 2 cycles for each active and deadtime
-    uint approx_cycles = (uint) (pll_freq / freq);
+    uint approx_cycles = (uint) (pll_freq / (2 * freq));
     uint approx_deadtime = (uint) (approx_cycles * deadtime);
-    int deadtime_cycles = approx_deadtime - 5; // amount of required dead cycles
+    int deadtime_cycles = approx_deadtime - 10; // amount of required dead cycles
+    int remove_from_active = 0;
     if (deadtime_cycles < 0){
+        remove_from_active = deadtime_cycles;
         deadtime_cycles = 0;
     }
-    int active_cycles = approx_cycles -  deadtime_cycles;
+    int active_cycles = approx_cycles -  deadtime_cycles + remove_from_active;
     if (active_cycles < 0){
         active_cycles = 0;
     }
     return (PWM_cycles){active_cycles, deadtime_cycles};
 }
+
+// Pulsing
 
 static inline void disable_sm(PIO pio, uint sm) {
     pio_sm_set_enabled(pio, sm, false);
@@ -119,14 +120,15 @@ int main()
 {
     #pragma region INITS
 
-    stdio_init_all();
-    adc_init();
-
-    sleep_ms(5000);
+    vreg_set_voltage(VREG_VOLTAGE_1_20);
+    sleep_ms(10);
 
     // PLL STUFF
-    pll_init (pll_sys, REF_DIV, VCO_FREQ, POST_DIV_1, POST_DIV_2); // oc to 250MHz
+    set_sys_clock_pll(1500 * MHZ, 6, 1);
     pll_freq = clock_get_hz(clk_sys);
+
+    stdio_init_all();
+    adc_init();
 
     // ADC STUFF
     adc_gpio_init(VOUTSENSE); // Pin 26
@@ -139,11 +141,7 @@ int main()
 
     //PWM STUFF
     offset = pio_add_program(PWM, &PWM_program);
-    //PWM_setup(PWM, SM, LO, HI, PINDIRS, pinmask, offset, BASE);
-
-    // Indicator light
-    gpio_set_function(ledpin, GPIO_FUNC_SIO);
-    gpio_put(ledpin, true);
+    PWM_setup(PWM, SM, LO, HI, PINDIRS, pinmask, offset, BASE);
 
     #pragma endregion
 
@@ -151,9 +149,10 @@ int main()
     uint elapsed;
     double vout;
     double error;
-    sleep_ms(10000);
+    sleep_ms(1000);
 
-    for (int i = 0; i < 100; i++){
+    while(true){
+        for (int i = 0; i < 100; i++){
         current_time = time_us_64(); // first pulse
 
         PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
@@ -168,11 +167,13 @@ int main()
         current_time = time_us_64(); // next pulse
 
         disable_sm(PWM, SM);
-        freq += 5000;
+        freq += 0;
 
         elapsed = time_us_64() - current_time;
         while (elapsed < LOOP_DT/2){
             elapsed = time_us_64() - current_time;
         }
     }
+    }
+
 }

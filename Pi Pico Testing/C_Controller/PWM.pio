@@ -10,14 +10,14 @@
 
 ; the entire loop has at least 84ns of compute time at 6ns cycles
 
-.define MINDEAD 2
+.define MINDEAD 3
 
 .wrap_target
 
 drivehi:
     pull noblock
     mov isr, osr ; copy bit temporarily
-    out x, 24 ; duty cycle
+    out x, 20 ; duty cycle
     out y, 12 ; deadtime
 
 delayhi:
@@ -27,8 +27,8 @@ deadtimehi:
     jmp y--     deadtimehi  side 0b00
 
 mov osr, isr
-out x, 24
-out y, 12 [3]
+out x, 20
+out y, 12 [MINDEAD]
 
 delaylo:
     jmp x--     delaylo     side 0b01   
@@ -36,6 +36,6 @@ delaylo:
 deadtimelo:
     jmp y--     deadtimelo  side 0b00   
 
-mov osr, isr
+mov x, isr
 
 .wrap
