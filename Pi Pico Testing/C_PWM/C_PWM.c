@@ -40,7 +40,7 @@ static uint64_t current_time;
 #define VSET 200
 #define KP 1000
 #define DIVIDE_ROUND(a, b) (((a) + ((b) / 2)) / (b))
-#define CONTROLLER_FREQ    50000U
+#define CONTROLLER_FREQ    1U
 #define LOOP_DT            DIVIDE_ROUND(1000000U, CONTROLLER_FREQ) // timer counts once per us
 #define ADCPERVOLT 44.63
 #define FREQPERVOLT 5000u

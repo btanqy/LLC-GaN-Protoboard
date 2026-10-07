@@ -16,13 +16,14 @@ static uint32_t pll_freq;
 // ADC
 #define VOUTSENSE 26
 static int vout_offset;
+static int adc_meas;
 
 // PIO for PWM
 static PIO PWM = pio0;
 #define SM 0
 #define LO 0
 #define HI 1
-#define PINDIRS 1
+#define PINDIRS 3 // binary 0b11
 static uint32_t pinmask = 0b11;
 static uint offset;
 #define BASE 0
@@ -31,17 +32,19 @@ static uint offset;
 
 // Output and tuning
 static uint freq = 500000; // for initial frequency
-static float deadtime = 0.01f;
+static float deadtime = 0.03f;
 static uint64_t current_time;
 #define VSET 200
-#define KP 3000
+#define KP 0.06
+#define KI 40
+static uint integral;
 #define DIVIDE_ROUND(a, b) (((a) + ((b) / 2)) / (b))
-#define CONTROLLER_FREQ    50000U
+#define CONTROLLER_FREQ    10000U
 #define LOOP_DT            DIVIDE_ROUND(1000000U, CONTROLLER_FREQ) // timer counts once per us
-#define ADCPERVOLT 44.63
+#define ADCPERVOLT 4.55
 #define FREQPERVOLT 5000u
-#define HICLAMP 600000u
-#define LOCLAMP 250000u
+#define HICLAMP 500000u
+#define LOCLAMP 310000u
 
 #pragma region DEFS
 
@@ -127,17 +130,17 @@ int main()
 {
     #pragma region INITS
 
-    vreg_set_voltage(VREG_VOLTAGE_1_20);
+    vreg_set_voltage(VREG_VOLTAGE_1_15);
     sleep_ms(10);
 
     // PLL STUFF
     set_sys_clock_pll(1500 * MHZ, 6, 1);
     pll_freq = clock_get_hz(clk_sys);
 
-    stdio_init_all();
+    // stdio_init_all(); causes this to hang without usb??
     adc_init();
 
-    sleep_ms(5000);
+    sleep_ms(10000);
 
     // ADC STUFF
     adc_gpio_init(VOUTSENSE); // Pin 26
@@ -158,19 +161,27 @@ int main()
     PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
     PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
     enable_sm(PWM, SM, target_freq);
-    sleep_us(100);
+    sleep_us(200);
     uint elapsed;
     double vout;
     double error;
+    integral = 0;
 
     while (true) {
-        for (uint i = 0; i < 5; i++){
+        for (uint i = 0; i < 100; i++){
             current_time = time_us_64(); // ensure accurate loop time
 
             // Control here
-            vout = adc_to_vout(adc_read() - vout_offset);
+
+            //averaged vout
+            adc_meas = 0;
+            for (uint ii = 0; ii < 5; ii++){
+                adc_meas += adc_read();
+            }
+            vout = adc_to_vout((int)(adc_meas/5) - vout_offset);
             error = vout_to_freq(vout - VSET);
-            freq = (uint) clamp(freq + (double)(KP * error * LOOP_DT / 1e6)); // scale loop dt to seconds from microseconds
+            integral += KI * error * LOOP_DT / 1e6;
+            freq = (uint) clamp(freq + (double)(KP * error) + (double)integral); // scale loop dt to seconds from microseconds
             target_freq = PWM_target_freq(freq, pll_freq, deadtime);
             PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
 
@@ -180,9 +191,10 @@ int main()
             }
         }
         disable_sm(PWM, SM);
-        sleep_us(1000);
-        freq = 600000;
+        sleep_ms(5000);
+        freq = 500000;
         target_freq = PWM_target_freq(freq, pll_freq, deadtime);
         enable_sm(PWM, SM, target_freq);
+        sleep_us(100);
     }
 }

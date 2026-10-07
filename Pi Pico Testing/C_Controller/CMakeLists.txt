@@ -55,6 +55,11 @@ target_link_libraries(C_Controller
         hardware_clocks
         hardware_pio)
 
+# flash needs to slow down
+target_compile_definitions(C_Controller PRIVATE
+    PICO_FLASH_SPI_CLKDIV=4
+)
+
 # Add the standard include files to the build
 target_include_directories(C_Controller PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
