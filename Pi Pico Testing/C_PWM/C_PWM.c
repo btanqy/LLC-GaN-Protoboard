@@ -34,8 +34,8 @@ static uint offset;
 #pragma endregion
 
 // Output and tuning
-static uint freq = 500000; // for initial frequency
-static float deadtime = 0.01f;
+static uint freq = 270000; // for initial frequency
+static float deadtime = 0.02f;
 static uint64_t current_time;
 #define VSET 200
 #define KP 1000
@@ -121,7 +121,7 @@ int main()
     #pragma region INITS
 
     vreg_set_voltage(VREG_VOLTAGE_1_20);
-    sleep_ms(10);
+    sleep_ms(1000);
 
     // PLL STUFF
     set_sys_clock_pll(1500 * MHZ, 6, 1);
@@ -149,10 +149,10 @@ int main()
     uint elapsed;
     double vout;
     double error;
-    sleep_ms(1000);
+    sleep_ms(5000);
 
     while(true){
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < 1; i++){
         current_time = time_us_64(); // first pulse
 
         PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
@@ -173,6 +173,8 @@ int main()
         while (elapsed < LOOP_DT/2){
             elapsed = time_us_64() - current_time;
         }
+
+        sleep_ms(5000);
     }
     }
 

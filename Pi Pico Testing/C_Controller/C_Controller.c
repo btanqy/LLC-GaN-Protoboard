@@ -7,6 +7,9 @@
 #include "PWM.pio.h"
 #include "hardware/pll.h"
 #include "hardware/vreg.h"
+#include "math.h"
+#include <stdlib.h>
+#include "string.h"
 
 #pragma region INIT VALUES
 
@@ -16,7 +19,8 @@ static uint32_t pll_freq;
 // ADC
 #define VOUTSENSE 26
 static int vout_offset;
-static int adc_meas;
+#define num_samples 7
+static int adc_meas[num_samples];
 
 // PIO for PWM
 static PIO PWM = pio0;
@@ -31,20 +35,20 @@ static uint offset;
 #pragma endregion
 
 // Output and tuning
-static uint freq = 500000; // for initial frequency
-static float deadtime = 0.03f;
+static uint freq = 400000; // for initial frequency
+static float deadtime = 0.05f;
 static uint64_t current_time;
-#define VSET 200
-#define KP 0.06
-#define KI 40
+#define VSET 210
+#define KP 0.07
+#define KI 50
 static uint integral;
 #define DIVIDE_ROUND(a, b) (((a) + ((b) / 2)) / (b))
-#define CONTROLLER_FREQ    10000U
+#define CONTROLLER_FREQ    33000U
 #define LOOP_DT            DIVIDE_ROUND(1000000U, CONTROLLER_FREQ) // timer counts once per us
 #define ADCPERVOLT 4.55
-#define FREQPERVOLT 5000u
-#define HICLAMP 500000u
-#define LOCLAMP 310000u
+#define FREQPERVOLT 2000u
+#define HICLAMP 400000u
+#define LOCLAMP 220000u
 
 #pragma region DEFS
 
@@ -131,7 +135,7 @@ int main()
     #pragma region INITS
 
     vreg_set_voltage(VREG_VOLTAGE_1_15);
-    sleep_ms(10);
+    sleep_ms(1000);
 
     // PLL STUFF
     set_sys_clock_pll(1500 * MHZ, 6, 1);
@@ -158,27 +162,53 @@ int main()
     #pragma endregion
 
     // Startup first
-    PWM_cycles target_freq = PWM_target_freq(freq, pll_freq, deadtime);
-    PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
-    enable_sm(PWM, SM, target_freq);
-    sleep_us(200);
+    PWM_cycles target_freq = PWM_target_freq(HICLAMP, pll_freq, deadtime);
+    // PWM_set_freq(PWM, SM, target_freq.active, target_freq.deadtime);
+    // enable_sm(PWM, SM, target_freq);
+    // sleep_us(20);
     uint elapsed;
     double vout;
     double error;
     integral = 0;
+    int adc_mean;
+    int variance;
+    int adc_pruned;
+    int adc_pruned_qty;
 
     while (true) {
-        for (uint i = 0; i < 100; i++){
+        for (uint i = 0; i < 32000; i++){
             current_time = time_us_64(); // ensure accurate loop time
 
             // Control here
 
             //averaged vout
-            adc_meas = 0;
-            for (uint ii = 0; ii < 5; ii++){
-                adc_meas += adc_read();
+            adc_mean = 0;
+            variance = 0;
+            adc_pruned = 0;
+            adc_pruned_qty = 0;
+            memset(adc_meas, 0, num_samples * sizeof(adc_meas[0]));
+            for (uint ii = 0; ii < num_samples; ii++){
+                adc_meas[ii] = adc_read();
+                adc_mean += adc_meas[ii];
             }
-            vout = adc_to_vout((int)(adc_meas/5) - vout_offset);
+            adc_mean = (int) (adc_mean / num_samples);
+            for (uint ii = 0; ii < num_samples; ii++){
+                variance += ((adc_meas[ii] - adc_mean)*(adc_meas[ii] - adc_mean));
+            }
+            variance = (int) (variance / num_samples);
+            for (uint ii = 0; ii < num_samples; ii++){
+                if (abs(adc_meas[ii] - adc_mean)*abs(adc_meas[ii] - adc_mean) > 2*variance){
+                    adc_meas[ii] = 0;
+                    adc_pruned_qty += 1;
+                }
+                adc_pruned += adc_meas[ii];
+            }
+            if (adc_pruned_qty == num_samples){
+                adc_pruned_qty = num_samples - 1;
+            }
+            adc_pruned = (int)(adc_pruned / (num_samples - adc_pruned_qty));
+
+            vout = adc_to_vout(adc_pruned - vout_offset);
             error = vout_to_freq(vout - VSET);
             integral += KI * error * LOOP_DT / 1e6;
             freq = (uint) clamp(freq + (double)(KP * error) + (double)integral); // scale loop dt to seconds from microseconds
@@ -192,7 +222,7 @@ int main()
         }
         disable_sm(PWM, SM);
         sleep_ms(5000);
-        freq = 500000;
+        freq = 400000;
         target_freq = PWM_target_freq(freq, pll_freq, deadtime);
         enable_sm(PWM, SM, target_freq);
         sleep_us(100);

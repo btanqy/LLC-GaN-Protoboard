@@ -35,51 +35,56 @@ mem32[PRIM] = (6 << 16) | (1 << 12) # div 6 for 200MHz overclock
 while (mem32[CS] & (1 << 31)) == 0: # wait for lock
     pass
 
-top = [round(550 + i * 400 / 41) for i in range(42)]
+top = [400 + i*5 for i in range(240)]
 
 sleep(10)
 
 while True:
 
-    #counter values
-    top_value = 530
-    half = int(top_value/2)
-    # setting the pwm slice 0
-    mem32[EN] = 0b00
-    mem32[CH0_CSR] = 0b00001001
-    mem32[CH0_DIV] = 1 << 4 # divide pll to 200MHz resolution
-    mem32[CH0_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
-    mem32[CH0_TOP] = top_value  # top = clock/(2*frequency)
-    # setting the pwm slice 1
-    mem32[CH1_CSR] = 0b00001001
-    mem32[CH1_DIV] = 1 << 4 # divide pll to 200MHz resolution
-    mem32[CH1_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
-    mem32[CH1_TOP] = top_value  # top = clock/(frequency)
-    mem32[CH0_CTR] = 0
-    mem32[CH1_CTR] = 0
-    sleep(5)
-    # clock stop
-    mem32[EN] = 0b00
-    mem32[CH0_CSR] = 0
-    mem32[CH1_CSR] = 0
-    
-    # set pwm
-    mem32[GPIO0_CTRL] = 4
-    mem32[GPIO2_CTRL] = 4
+    for i in range(61):
+            
+        #counter values
+        top_value = 300 + i*5
+        half = int(top_value/2)
 
-    # phase shift
-    mem32[CH0_CTR] = 0
-    mem32[CH1_CTR] = (half + 10)
-    
-    # enable
-    mem32[EN] = 0b11
-    sleep(0.003)
-    
-    # off pwm
-    mem32[EN] = 0b00
-    mem32[CH0_CSR] &= ~(1 << 0)
-    mem32[CH1_CSR] &= ~(1 << 0)
-    mem32[GPIO0_CTRL] = 5
-    mem32[GPIO2_CTRL] = 5
-    mem32[GPIO_OUT] &= ~(0b101 << 0)
+        # setting the pwm slice 0
+        mem32[EN] = 0b00
+        mem32[CH0_CSR] = 0b00001001
+        mem32[CH0_DIV] = 1 << 4 # divide pll to 200MHz resolution
+        mem32[CH0_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
+        mem32[CH0_TOP] = top_value  # top = clock/(2*frequency)
+        # setting the pwm slice 1
+        mem32[CH1_CSR] = 0b00001001
+        mem32[CH1_DIV] = 1 << 4 # divide pll to 200MHz resolution
+        mem32[CH1_CC] = (half - 15)  # 50% duty with 50ns deadtime = dead/(div*fclk)
+        mem32[CH1_TOP] = top_value  # top = clock/(frequency)
+        mem32[CH0_CTR] = 0
+        mem32[CH1_CTR] = 0
+        sleep(10)
+        # clock stop
+        mem32[EN] = 0b00
+        mem32[CH0_CSR] = 0
+        mem32[CH1_CSR] = 0
+        
+        # set pwm
+        mem32[GPIO0_CTRL] = 4
+        mem32[GPIO2_CTRL] = 4
+
+        # phase shift
+        mem32[CH0_CTR] = 0
+        mem32[CH1_CTR] = (half + 10)
+        
+        # enable
+        mem32[EN] = 0b11
+        sleep(0.5)
+        
+        # off pwm
+        mem32[EN] = 0b00
+        mem32[CH0_CSR] &= ~(1 << 0)
+        mem32[CH1_CSR] &= ~(1 << 0)
+        mem32[GPIO0_CTRL] = 5
+        mem32[GPIO2_CTRL] = 5
+        mem32[GPIO_OUT] &= ~(0b101 << 0)
+
+    sleep(10)
     
