@@ -34,8 +34,8 @@ static uint offset;
 #pragma endregion
 
 // Output and tuning
-static uint freq = 270000; // for initial frequency
-static float deadtime = 0.02f;
+static uint freq = 350000; // for initial frequency
+static float deadtime = 0.3f;
 static uint64_t current_time;
 #define VSET 200
 #define KP 1000
